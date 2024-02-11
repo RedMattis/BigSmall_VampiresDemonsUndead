@@ -1,0 +1,232 @@
+<Defs>
+
+  <GeneDef>
+    <defName>VU_LethalLover</defName>
+    <label>parasitic bond</label>
+    <description>Carriers of this gene psychically bond with their lovers in a parasitic manner. Their lovers will get devastated should the carrier of this gene die.</description>
+    <iconPath>GeneIcons/VU_LethalLover</iconPath>
+    <displayCategory>Psychic</displayCategory>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <hediffGiversCannotGive>
+      <li MayRequire="vanillaracesexpanded.highmate">VRE_PsychicBondBloodlust</li>
+    </hediffGiversCannotGive>
+    <exclusionTags>
+      <li>PsychicBonding</li>
+    </exclusionTags>
+    <forcedTraits>
+      <li>
+        <def>Bloodlust</def>
+      </li>
+    </forcedTraits>
+    <abilities>
+      <li>VU_CutBond</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>VU_CutBond</AbilityDef>
+    </descriptionHyperlinks>
+    <aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>PsychicBonding</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>VU_Disguised_Succubus</defName>
+    <label>disguised</label>
+    <displayCategory>BS_DO_NOT</displayCategory>
+    <description>Carriers of this gene hides their true nature...</description>
+    <iconPath>GeneIcons/BS_DisguisedDemon</iconPath>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0.0</selectionWeight>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneSuppressor_Gene" MayRequire="RedMattis.BetterPrerequisites">
+        <supressedGenes>
+          <li>AG_BatWings</li>
+          <li>AG_DemonWings</li>
+          <li>AG_DemonTail</li>
+          <li>AG_DemonEars</li>
+          <li>Ears_Human</li>
+          <li>Ears_Pointed</li>
+          <li>BS_Ears_PointedHD</li>
+          <li>Jotun_Horns_Small</li>
+          <li>Jotun_Horns_Small_skin</li>
+          <li>AG_DemonHorns</li>
+          <li>AG_ClawedHands</li>
+          <li>BS_SmallDemonWings</li>
+          <li>BS_AncientDemonWings</li>
+          <li>BS_LargeDemonWings</li>
+          <li>BS_DemonTail</li>
+          <li>BS_Arching_Horns</li>
+          <li>BS_Arching_Horns_skin</li>
+          <li>BS_ForwardArchingHorns_Skin</li>
+          <li>BS_ForwardArchingHorns</li>
+          <li>BS_TyrantCrown</li>
+
+          <!-- <li>Hair_MediumRed</li>
+          <li>Hair_BrightRed</li>
+          <li>BS_BloodHair</li>
+          <li>Skin_DeepRed</li>
+          <li>Skin_PaleRed</li>
+          <li>BS_SkinBloodRed</li> -->
+        </supressedGenes>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>VU_DemonTrueForm</defName>
+    <label>true form</label>
+    <prerequisite>Hemogenic</prerequisite>
+    <displayCategory>BS_DO_NOT</displayCategory>
+    <description>Carriers of this gene can transform into a larger more powerful form temporarily.</description>
+    <iconPath>GeneIcons/VU_DemonForm</iconPath>
+    <abilities>
+      <li>VU_DemonForm_Abillity</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>VU_DemonForm_Abillity</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-5</biostatMet>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <selectionWeight>0</selectionWeight>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>VU_Involuntary_Werewolf</defName>
+    <label>involuntary werewolf</label>
+    <displayCategory>BS_DO_NOT</displayCategory>
+    <description>Carriers of this gene transforms at night</description>
+    <iconPath>GeneIcons/BS_InvoluntaryWerewolf</iconPath>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0.0</selectionWeight>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GeneSuppressor_Gene" MayRequire="RedMattis.BetterPrerequisites">
+        <supressedGenes>
+          <li>BS_WerewolfSnoot</li>
+          <li>Ears_Cat</li>
+          <li>VU_Pounce</li>
+          <li>HalfJotunFrame</li>
+          <li>BTEMa_Nose_Lupine</li>
+          <li>BTEMa_VulpineEars</li>
+          <li>BTE_FeralMight</li>
+          <li>RobustDigestion</li>
+          <li>VU_DarknessWoundHealing_Fast</li>
+          <li>Superclotting</li>
+          <li>VU_Darkness_MoveSpeed_VeryQuick</li>
+          <li>Mood_Depressive</li>
+          <li>MinTemp_LargeDecrease</li>
+          <li>MaxTemp_SmallIncrease</li>
+          <li>Aggression_HyperAggressive</li>
+          <li>VU_DarknessMelee</li>
+          <li>BS_Unarmed_VeryStrong</li>
+          <li>BS_UnarmedOnly</li>
+          <li>BS_Pain_None</li>
+          <li>Tail_Furry</li>
+          <li>Ears_Cat </li>
+          <li>BS_AnimalEars </li>
+          <li>Beauty_VeryUgly</li>
+          <li>VoiceRoar</li>
+          <li>Body_Standard</li>
+          <li>Body_Hulk</li>
+          <li>Hair_Gray</li>
+          <li>Skin_SlateGray</li>
+          <li>Cannibal</li>
+          <li>AG_ClawedHands</li>
+          <li>BS_ToughSkin</li>
+          <li>Learning_Slow</li>
+          <li>Nearsighted</li>
+          <li>DarkVision</li>
+          <li>Furskin</li>
+          <li>Unstoppable</li>
+          <li>AptitudePoor_Shooting</li>
+          <li>AptitudeStrong_Melee</li>
+          <li>AptitudePoor_Mining</li>
+          <li>AptitudePoor_Cooking</li>
+          <li>AptitudePoor_Plants</li>
+          <li>AptitudePoor_Animals</li>
+          <li>AptitudeTerrible_Crafting</li>
+          <li>AptitudeTerrible_Artistic</li>
+          <li>AptitudeTerrible_Medicine</li>
+          <li>AptitudePoor_Social</li>
+          <li>AptitudeTerrible_Intellectual</li>
+          <li>AptitudePoor_Construction</li>
+          <li>VU_WerewolfInfectiousBite</li>
+          
+        </supressedGenes>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <invert>true</invert>
+				<conditionals><li Class="BigAndSmall.ConditionalStatAffecter_AtNight"/></conditionals>
+			</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  
+
+  <GeneDef>
+    <defName>VU_WerewolfInfectiousBite</defName>
+    <label>Infectious Attack (Lycan)</label>
+    <displayCategory>BS_DO_NOT</displayCategory>
+    <description>Bites from this person can infect the victim with lycantropy.</description>
+    <iconPath>GeneIcons/VU_InfectiousAttackWerewolf</iconPath>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <abilities Inherit="False">
+      <li>VU_LycantropeInfect</li>
+    </abilities>
+    <descriptionHyperlinks Inherit="False">
+      <AbilityDef>VU_LycantropeInfect</AbilityDef>
+    </descriptionHyperlinks>
+    <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyPartHediff>
+					<li>
+						<hediff>VU_WerewolfFangs</hediff>
+            <bodyparts>
+              <li>Jaw</li>
+            </bodyparts>
+					</li>
+				</applyPartHediff>
+			</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  <canGenerateInGeneSet>false</canGenerateInGeneSet>
+  <selectionWeight>0</selectionWeight>
+</Defs>

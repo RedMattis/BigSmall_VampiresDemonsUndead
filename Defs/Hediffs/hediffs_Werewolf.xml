@@ -1,0 +1,157 @@
+<Defs>
+  <HediffDef>
+		<defName>VU_WerewolfFangs</defName>
+		<label>Werewolf Fangs</label>
+		<description>The brutal fangs of a transformed werewolf. Can infect victims with lycantropy.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+          <li>
+            <label>werewolf bite</label>
+            <capacities>
+              <li>VU_WerewolfBiteCap</li>
+            </capacities>
+            <power>8</power>
+            <cooldownTime>2</cooldownTime>
+            <!-- <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup> -->
+            <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>12</amount>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+          </li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+  <ToolCapacityDef>
+    <defName>VU_WerewolfBiteCap</defName>
+    <label>werewolf bite</label>
+  </ToolCapacityDef>
+
+  <ManeuverDef>
+    <defName>VU_WerewolfBiteMan</defName>
+    <requiredCapacity>VU_WerewolfBiteCap</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <ai_IsWeapon>false</ai_IsWeapon>
+      <meleeDamageDef>VU_WerewolfBiteDmg</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+  <DamageDef ParentName="Bite">
+    <defName>VU_WerewolfBiteDmg</defName>
+    <label>werewolf's bite</label>
+    <additionalHediffs>
+      <li>
+        <hediff>VU_Lycantropy</hediff>
+        <severityPerDamageDealt>0.015</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+        <inverseStatScaling>true</inverseStatScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+    <impactSoundType>Toxic</impactSoundType>
+    <damageEffecter>Impact_Toxic</damageEffecter>
+  </DamageDef>
+
+  <HediffDef>
+    <defName>VU_Lycantropy</defName>
+    <label>Lycantropy</label>
+    <description>This person has been infected by lycantropy from a Werewolf. It is crucial that they get medical treatment.</description>
+    <isBad>true</isBad>
+    <makesSickThought>true</makesSickThought>
+    <lethalSeverity>1.05</lethalSeverity>
+    <tendable>true</tendable>
+    <initialSeverity>0.01</initialSeverity>
+    <hediffClass>BigAndSmall.TransitioningHediff</hediffClass>
+    <stages>
+    <li>
+        <label>aching wound</label>
+        <extraTooltip>A nasty aching wound</extraTooltip>
+        <minSeverity>0.15</minSeverity>
+        <painOffset>0.15</painOffset>
+        <statFactors>
+          <RestFallRateFactor>1.6</RestFallRateFactor>
+        </statFactors>
+      </li>
+      <li>
+        <label>warped wound</label>
+        <extraTooltip>painful muscle spasms</extraTooltip>
+        <minSeverity>0.85</minSeverity>
+
+        <painOffset>0.60</painOffset>
+        <statFactors>
+          <RestFallRateFactor>1.4</RestFallRateFactor>
+        </statFactors>
+      </li>
+
+      <li>
+        <label>shifting</label>
+        <extraTooltip>changing..!</extraTooltip>
+        <minSeverity>0.92</minSeverity>
+
+        <painOffset>0.10</painOffset>
+        <statFactors>
+          <RestFallRateFactor>1.4</RestFallRateFactor>
+        </statFactors>
+      </li>
+      
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>9</baseTendDurationHours>
+        <severityPerDayTended>-0.5</severityPerDayTended>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>1.00</severityPerDayNotImmune>
+        <immunityPerDaySick>0.85</immunityPerDaySick>
+        <severityPerDayImmune>-2.0</severityPerDayImmune>
+        <immunityPerDayNotSick>-1.0</immunityPerDayNotSick>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="BigAndSmall.TransitioningHediffProps">
+        <onSeverity>
+          <li>
+            <severity>1.00</severity>
+            <trigger>
+              <xenoTypeToAdd>VU_Lycantrope</xenoTypeToAdd>
+              <hediffsToRemove>
+                <li>VU_Lycantropy</li>
+              </hediffsToRemove>
+            </trigger>
+          </li>
+          <li>
+            <severity>0.90</severity>
+            <trigger>
+              <xenogene>false</xenogene>
+              <geneDefsToAdd>
+                <li>Tail_Furry</li>
+                <li>BS_AnimalEars</li>
+              </geneDefsToAdd>
+            </trigger>
+          </li>
+        </onSeverity>
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+</Defs>

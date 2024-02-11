@@ -1,0 +1,196 @@
+<Defs>
+
+  <PawnKindDef Name="VU_RoamingUndead_Medieval">
+    <defName>VU_RoamingUndead_Medieval</defName>
+    <label>roaming undead</label>
+    <combatPower>60</combatPower>
+    <race>Human</race>
+    <defaultFactionType>VU_Roaming_Undead</defaultFactionType>
+    <maxGenerationAge>100</maxGenerationAge>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <apparelTags>
+      <li>Neolithic</li>
+      <li>MedievalArmorBasic</li>
+      <li>DankPyon_Peasant</li>
+      <li>DankPyon_PeasantHelmet</li>
+    </apparelTags>
+
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>0~600</apparelMoney>
+    <weaponMoney>100~300</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+      <li>NeolithicMeleeBasic</li>
+      <li>NeolithicMeleeDecent</li>
+      <li>NeolithicMeleeAdvanced</li>
+      <li>DankPyon_Greatsword</li>
+      <li>DankPyon_NamedGreataxe</li>
+    </weaponTags>
+    <techHediffsMoney>50~1500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.05</techHediffsChance>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>3~8</initialResistanceRange>
+    <factionLeader>false</factionLeader>
+
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <styleItemTags>
+      <li>
+        <tag>Rural</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Tribal</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>0~4</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>0~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef Name="VU_RoamingWerewolf_Medieval" ParentName="VU_RoamingUndead_Medieval">
+    <defName>VU_RoamingWerewolf_Medieval</defName>
+    <label>roaming werewolf</label>
+    <combatPower>75</combatPower>
+    <race>Human</race>
+    <defaultFactionType>VU_Roaming_Undead</defaultFactionType>
+    <maxGenerationAge>100</maxGenerationAge>
+    <chemicalAddictionChance>0.25</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <apparelTags>
+      <li>MedievalArmorBasic</li>
+      <li>Neolithic</li>
+      <li>DankPyon_Peasant</li>
+      <li>DankPyon_PeasantHelmet</li>
+    </apparelTags>
+    <gearHealthRange>0.2~0.5</gearHealthRange>
+    <weaponMoney>0~0</weaponMoney>
+    <weaponTags Inherit="False"/>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>0~8</range>
+      </li>
+    </skills>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances Inherit="False">
+        <VU_Lycantrope>999</VU_Lycantrope>
+      </xenotypeChances>
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef Name="VU_RoamingUndeadLeader_Medieval" ParentName="VU_RoamingUndead_Medieval">
+    <defName>VU_RoamingUndeadLeader_Medieval</defName>
+    <label>undead leader</label>
+    <combatPower>100</combatPower>
+    <maxGenerationAge>1000</maxGenerationAge>
+    <invNutrition>5</invNutrition>
+    <apparelTags Inherit="False">
+      <li>MedievalMilitary</li>
+      <li>MedievalArmorDecent</li>
+      <li>MedievalArmorElite</li>
+    </apparelTags>
+    <itemQuality>Normal</itemQuality>
+    <gearHealthRange>0.3~1.1</gearHealthRange>
+    <apparelMoney>50~3000</apparelMoney>
+    <weaponMoney>100~3700</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+      <li>LongSword</li>
+      <li>DankPyon_Greatsword</li>
+      <li>DankPyon_NamedGreataxe</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneRing</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneWand</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneStaff</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcanHalberd</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
+    </weaponTags>
+    <techHediffsMoney>200~4000</techHediffsMoney>
+    <techHediffsTags Inherit="False">
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.10</techHediffsChance>
+    <initialWillRange>0~3</initialWillRange>
+    <initialResistanceRange>12~25</initialResistanceRange>
+
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances Inherit="False">
+        <VU_Succubus>0.35</VU_Succubus>
+        <VU_Nosferatu>0.35</VU_Nosferatu>
+        <VU_WhiteRose>0.15</VU_WhiteRose>
+        <VU_Dracul>0.30</VU_Dracul>
+        <VU_Dracul_Mature>0.10</VU_Dracul_Mature>
+        <VU_Lycantrope>0.10</VU_Lycantrope>
+        <VU_Dracul_Progenitor>0.05</VU_Dracul_Progenitor>
+      </xenotypeChances>
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+    </xenotypeSet>
+    <styleItemTags Inherit="False">
+      <li>
+        <tag>Soldier</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~20</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>6~20</range>
+      </li>
+    </skills>
+    <factionLeader>false</factionLeader>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="VU_RoamingUndeadLeader_Medieval">
+    <defName>VU_RoamingUndeadMaster_Medieval</defName>
+    <label>undead master</label>
+    <combatPower>150</combatPower>
+    <maxGenerationAge>1000</maxGenerationAge>
+    <gearHealthRange>0.5~1.1</gearHealthRange>
+    <apparelMoney>1000~4000</apparelMoney>
+    <weaponMoney>900~12700</weaponMoney>
+    <techHediffsMoney>2000~8000</techHediffsMoney>
+    <techHediffsChance>0.25</techHediffsChance>
+    <initialWillRange>0~5</initialWillRange>
+    <initialResistanceRange>18~25</initialResistanceRange>
+
+    <factionLeader>true</factionLeader>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12~20</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>12~20</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+</Defs>

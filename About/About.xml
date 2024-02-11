@@ -1,0 +1,36 @@
+<ModMetaData>
+	<name>Vampires, Demons, and the Undead</name>
+	<author>RedMattis</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+  <packageId>RedMattis.Undead</packageId>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+    </li>
+    <li>
+      <packageId>RedMattis.BigSmall.Core</packageId>
+      <displayName>Big and Small Genes</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2920751126</steamWorkshopUrl>
+    </li>
+    
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>brrainz.harmony</li>
+    <li>RedMattis.BigSmall.Core</li>
+	</loadAfter>
+  <loadBefore>
+  </loadBefore>
+  <incompatibleWith>
+	</incompatibleWith>
+	
+	<description>
+Adds Genes, Xenotypes, (optional) factions, and Mechanics related to Vampires, Demons, and the Undead.
+	</description>
+</ModMetaData>

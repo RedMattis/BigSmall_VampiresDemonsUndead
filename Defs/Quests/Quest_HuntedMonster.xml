@@ -1,0 +1,129 @@
+<Defs>
+  
+  <IncidentDef ParentName="GiveQuestBase">
+    <defName>BS_GiveQuest_Escaped_Monster</defName>
+    <label>fleeing monster</label>
+    <questScriptDef>BS_Escaped_Monster</questScriptDef>
+    <baseChance>0.01</baseChance> <!--This... might need testing.-->
+  </IncidentDef>
+
+  <QuestScriptDef>
+    <defName>BS_Escaped_Monster</defName>
+    <defaultChallengeRating>1</defaultChallengeRating>
+    <isRootSpecial>true</isRootSpecial>
+    <defaultCharity>false</defaultCharity>
+    <successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityFulfilled_HospitalityRefugees</successHistoryEvent>
+    <failedOrExpiredHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityRefused_HospitalityRefugees</failedOrExpiredHistoryEvent>
+    <expireDaysRange>15</expireDaysRange>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->the [adjAny] monster</li>
+
+        <!-- Pieces -->
+        <li>adjAny->cornered</li>
+        <li>adjAny->pursued</li>
+        <li>adjAny->friendly neighbourhood</li>
+        <li>adjAny->reluctant</li>
+
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+     
+      <rulesStrings>
+        <li>questDescription->[asker_nameFull]; a suspected monster; are on the run from a hunting party sent by [enemyFaction_name]. [asker_nameFull] is asking to see refuge at [map_definite]. The hunting party of [enemyFaction_pawnsPlural] is composed of: \n\n[raid/raidPawnKinds]\n\n[asker_nameFull].\nBecause [asker_nameFull] might have been up to monstrous acts even charitable colonists may tolerate refusing aid.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+
+      <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_GetMap" />
+        <li Class="QuestNode_GetWalkInSpot" />
+
+        <li Class="QuestNode_Set">
+          <name>raidPoints</name>
+          <value>$points</value>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_AdjustPointsForDistantFight</def>
+        </li>
+        
+        <!-- Get asker -->
+        <li Class="BigAndSmall.QuestNode_PawnGenerator">
+          <kindDef>Colonist</kindDef>
+          <storeAs>asker</storeAs>
+          <playerFaction>true</playerFaction>
+          <forcedXenotypes>
+            <li>VU_Succubus</li>
+            <li>VU_Dracul</li>
+            <li>VU_Lycantrope</li>
+            <li>VU_Frankenstein</li>
+            <li>VU_WhiteRose</li>
+          </forcedXenotypes>
+          <forceOneTraitOf>
+            <li>Tough</li>
+            <li>Brawler</li>
+            <!-- <li>NightOwl</li> -->
+            <li>Masochist</li>
+          </forceOneTraitOf>
+          <prohibitedTraits>
+            <li>Wimp</li>
+            <li>Delicate</li>
+          </prohibitedTraits>
+          <allowPregnant>false</allowPregnant>
+          <mustBeCapableOfViolence>true</mustBeCapableOfViolence>
+          <allowAddictions>false</allowAddictions>
+        </li>
+        
+       <!-- Get raider faction -->
+        <li Class="QuestNode_GetFaction">
+          <allowEnemy>true</allowEnemy>
+          <mustBePermanentEnemy>true</mustBePermanentEnemy>
+          <storeAs>enemyFaction</storeAs>
+        </li>
+        
+        <!-- Spawn joiner -->
+        <li Class="QuestNode_PawnsArrive">
+          <pawns>$asker</pawns>
+          <walkInSpot>$walkInSpot</walkInSpot>
+          <joinPlayer>true</joinPlayer>
+          <customLetterText TKey="LetterLabelAskerBecameHostile">{BASETEXT}\n\nBecause you accepted [asker_nameDef], the hunting party soon due to arrive.</customLetterText>
+          <isSingleReward>true</isSingleReward>
+          <rewardDetailsHidden>true</rewardDetailsHidden>
+        </li>
+        
+        <!-- Raid -->
+        <li Class="QuestNode_Set">
+          <name>raidDelayTicks</name>
+          <value>$(roundToTicksRough(randInt(1800, 2400)))</value>
+        </li>
+        <li Class="QuestNode_Delay">
+          <delayTicks>$raidDelayTicks</delayTicks>
+          <node Class="QuestNode_SubScript">
+            <def>Util_Raid</def>
+            <prefix>raid</prefix>
+            <parms>
+              <inSignal>$inSignal</inSignal>
+              <map>$map</map>
+              <enemyFaction>$enemyFaction</enemyFaction>
+              <points>$raidPoints</points>
+              <walkInSpot>$walkInSpot</walkInSpot>
+              <customLetterLabel TKey="LetterLabelLoyaltySquad">{BASELABEL}: Hunting party</customLetterLabel>
+              <customLetterText TKey="LetterTextLoyaltySquad">{BASETEXT}\n\nThese are the hunting party targeting [../asker_nameFull].
+              </customLetterText>
+            </parms>
+          </node>
+        </li>
+		
+		<!-- End a few seconds after raid arrives -->
+        <li Class="QuestNode_Delay">
+          <delayTicks>$($raidDelayTicks+600)</delayTicks>
+          <node Class="QuestNode_End" />
+        </li>
+
+      
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+</Defs>

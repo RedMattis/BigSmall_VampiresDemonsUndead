@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "PsychicBondTorn"]/nullifyingGenes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "PsychicBondTorn"]</xpath>
+			<value>
+				<nullifyingGenes>
+					<li>VU_LethalLover</li>
+				</nullifyingGenes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "PsychicBondTorn"]/nullifyingGenes</xpath>
+			<value>
+				<li>VU_LethalLover</li>
+			</value>
+		</match>
+	</Operation>
+
+  <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "MyLoverDied"]/nullifyingGenes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "MyLoverDied"]</xpath>
+			<value>
+				<nullifyingGenes>
+					<li>VU_LethalLover</li>
+				</nullifyingGenes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "MyLoverDied"]/nullifyingGenes</xpath>
+			<value>
+				<li>VU_LethalLover</li>
+			</value>
+		</match>
+	</Operation>
+
+  <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "MyFianceeDied"]/nullifyingGenes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "MyFianceeDied"]</xpath>
+			<value>
+				<nullifyingGenes>
+					<li>VU_LethalLover</li>
+				</nullifyingGenes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "MyFianceeDied"]/nullifyingGenes</xpath>
+			<value>
+				<li>VU_LethalLover</li>
+			</value>
+		</match>
+	</Operation>
+
+  <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "MyFianceDied"]/nullifyingGenes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "MyFianceDied"]</xpath>
+			<value>
+				<nullifyingGenes>
+					<li>VU_LethalLover</li>
+				</nullifyingGenes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "MyFianceDied"]/nullifyingGenes</xpath>
+			<value>
+				<li>VU_LethalLover</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

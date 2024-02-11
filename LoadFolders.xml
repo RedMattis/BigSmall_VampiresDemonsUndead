@@ -1,0 +1,12 @@
+<loadFolders>
+
+  <v1.4>
+
+    <li>/</li>
+    <li IfModActive="Ludeon.Rimworld.Royalty">Royalty</li>
+    <!-- <li IfModActive="erdelf.HumanoidAlienRaces">1.4/HAR</li> -->
+    <!-- <li IfModNotActive ="erdelf.HumanoidAlienRaces">1.4/No_HAR</li> -->
+
+  </v1.4>
+
+</loadFolders>

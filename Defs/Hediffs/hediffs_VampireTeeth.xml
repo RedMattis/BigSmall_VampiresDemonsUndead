@@ -1,0 +1,77 @@
+<Defs>
+
+  <HediffDef>
+		<defName>VU_DraculTeeth</defName>
+		<label>Vampire Fangs</label>
+		<description>The Sharp teeth of a Dracul vampire. Can infect victims with vampirism.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+          <li>
+            <label>vampire bite</label>
+            <capacities>
+              <li>VU_DraculBiteCap</li>
+            </capacities>
+            <power>10</power>
+            <cooldownTime>2</cooldownTime>
+            <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+            <!-- <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup> -->
+            <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>12</amount>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+          </li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+  <ToolCapacityDef>
+    <defName>VU_DraculBiteCap</defName>
+    <label>vampire bite</label>
+  </ToolCapacityDef>
+
+  <ManeuverDef>
+    <defName>VU_VampireBiteMan</defName>
+    <requiredCapacity>VU_DraculBiteCap</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <ai_IsWeapon>false</ai_IsWeapon>
+      <meleeDamageDef>VU_DraculBiteDmg</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+  <DamageDef ParentName="Bite">
+    <defName>VU_DraculBiteDmg</defName>
+    <label>vampire's bite</label>
+    <additionalHediffs>
+      <li>
+        <hediff>VU_DraculVampirism</hediff>
+        <severityPerDamageDealt>0.015</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+        <inverseStatScaling>true</inverseStatScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+    <impactSoundType>Toxic</impactSoundType>
+    <damageEffecter>Impact_Toxic</damageEffecter>
+  </DamageDef> 
+
+</Defs>

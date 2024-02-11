@@ -1,0 +1,19 @@
+<Defs>
+  <!-- <GameConditionDef>
+    <defName>VU_VengefulDead</defName>
+    <label>vengeful dead</label>
+    <description>...</description>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+
+  <GameConditionDef>
+    <defName>VU_UnlivingNightmare</defName>
+    <conditionClass>GameCondition_VolcanicWinter</conditionClass>
+    <label>a strange chill in the air</label>
+    <description>...</description>
+    <endMessage>...</endMessage>
+    <letterText>...</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef> -->
+</Defs>

@@ -1,0 +1,366 @@
+<Defs>
+  <FactionDef ParentName="PirateBandBase">
+    <defName>VU_UndeadFaction</defName>
+    <label>The Returned</label>
+    <description>A faction formed up mostly of creatures seemingly returned from the dead.</description>
+    <factionIconPath>FactionIcons/VU_UndeadFaction</factionIconPath>
+    <pawnSingular>returned</pawnSingular>
+    <pawnsPlural>returned</pawnsPlural>
+    <replacesFaction>Pirate</replacesFaction>
+    <permanentEnemy>false</permanentEnemy>
+    <naturalEnemy>true</naturalEnemy>
+    <techLevel>Industrial</techLevel>
+    <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <allowedCultures><li>Astropolitan</li></allowedCultures>
+    <requiredMemes Inherit="False">
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li>Bloodfeeding</li>
+    </requiredMemes>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <VU_Dracul_Spawn>0.60</VU_Dracul_Spawn>
+        <VU_Dracul_Feral>0.10</VU_Dracul_Feral>
+        <VU_Ghoul>0.30</VU_Ghoul>
+        <VU_Returned>0.20</VU_Returned>
+        <VU_WhiteRose>0.10</VU_WhiteRose>
+        <VU_Succubus>0.05</VU_Succubus>
+        <VU_Nosferatu>0.05</VU_Nosferatu>
+        <VU_Dracul>0.04</VU_Dracul>
+        <VU_Dracul_Mature>0.01</VU_Dracul_Mature>
+        <VU_Lycantrope>0.05</VU_Lycantrope>
+        <VU_Frankenstein>0.10</VU_Frankenstein>
+        <VU_Dracul_Progenitor>0.001</VU_Dracul_Progenitor>
+      </xenotypeChances>
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+    </xenotypeSet>
+    <pawnGroupMakers Inherit="True">
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <Villager>5</Villager>
+          <Town_Guard>10</Town_Guard>
+          <Grenadier_Destructive>1.5</Grenadier_Destructive>
+          <Mercenary_Slasher>10</Mercenary_Slasher>
+          <Mercenary_Gunner>10</Mercenary_Gunner>
+          <Mercenary_Elite>10</Mercenary_Elite>
+          <Town_Councilman>10</Town_Councilman>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Villager>20</Villager>
+          <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+          <Town_Guard>5</Town_Guard>
+          <Mercenary_Slasher>5</Mercenary_Slasher>
+          <Town_Councilman>10</Town_Councilman>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader_Pig>1</Town_Trader_Pig>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <Villager>20</Villager>
+          <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+          <Town_Guard>5</Town_Guard>
+          <Mercenary_Slasher>5</Mercenary_Slasher>
+          <Town_Councilman>10</Town_Councilman>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Villager>20</Villager>
+          <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+          <Town_Guard>5</Town_Guard>
+          <Mercenary_Slasher>5</Mercenary_Slasher>
+          <Town_Councilman>10</Town_Councilman>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Miner>1</Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Hunter>1</Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Logger>1</Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Farmer>1</Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <FactionDef ParentName="PirateBandBase"> <!--TribeBase-->
+    <defName>VU_Roaming_Undead</defName>
+    <label>roaming undead</label>
+    <fixedName>Undead Hordes</fixedName>
+    <leaderTitle>leader</leaderTitle>
+    <description>These aggressive undead seem to have lost most higher reasoning and mostly roam the region seemingly aimlessly. Most of them seem to trapped in a daze or act compulsively.</description>
+    <techLevel>Industrial</techLevel>
+    <pawnsPlural>undead</pawnsPlural>
+    <canStageAttacks>true</canStageAttacks> 
+    <factionIconPath>FactionIcons/VU_UndeadHorde</factionIconPath>
+    <autoFlee>false</autoFlee>
+    <allowedCultures Inherit="False"><li>Astropolitan</li></allowedCultures>
+    <allowedMemes Inherit="False">
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </allowedMemes>
+
+    <disallowedRaidStrategies>
+      <li>ImmediateAttackSappers</li>
+      <li>ImmediateAttackBreaching</li>
+      <li>ImmediateAttackBreachingSmart</li>
+      <li>ImmediateAttackSmart</li>
+      <li>Siege</li>
+    </disallowedRaidStrategies>
+    <!-- <requiredMemes>
+    </requiredMemes> -->
+    <colorSpectrum>
+      <li>(0.65, 0.28, 0)</li>
+      <li>(0.61, 0.45, 0.32)</li>
+    </colorSpectrum>
+    <permanentEnemy>true</permanentEnemy>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>20</configurationListOrderPriority>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <canSiege>false</canSiege>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <VU_Dracul_Feral>0.50</VU_Dracul_Feral>
+        <VU_Ghoul>0.30</VU_Ghoul>
+        <VU_Returned>0.20</VU_Returned>
+        <VU_Dracul_Spawn>0.20</VU_Dracul_Spawn>
+        <VU_Succubus>0.05</VU_Succubus>
+        <VU_Nosferatu>0.05</VU_Nosferatu>
+        <VU_Frankenstein>0.10</VU_Frankenstein>
+        <VU_Lycantrope>0.0</VU_Lycantrope>
+      </xenotypeChances>
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+    </xenotypeSet>
+    
+    <maxPawnCostPerTotalPointsCurve Inherit="False">
+      <points>
+        <li>(500, 150)</li> <!-- Can always use relatively strong pawns, because giants doesn't really have weak ones -->
+        <li>(2000, 250)</li>
+        <li>(2001, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    
+    <pawnGroupMakers Inherit="False">
+      <!-- Just simple undead -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>20</commonality>
+        <options>
+          <VU_RoamingUndead>1</VU_RoamingUndead>
+        </options>
+      </li>
+
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>20</commonality>
+        <options>
+          <VU_RoamingWerewolf>1</VU_RoamingWerewolf>
+        </options>
+      </li>
+
+      <!-- Basic undead + a few leaders -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <VU_RoamingUndead>5</VU_RoamingUndead>
+          <VU_RoamingUndeadLeader>1</VU_RoamingUndeadLeader>
+        </options>
+      </li>
+
+      <!-- Horde of undead soldiers -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <VU_RoamingFootman>1</VU_RoamingFootman>
+        </options>
+      </li>
+      
+      <!-- Undead company of soldiers-->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <VU_RoamingSoldier>1</VU_RoamingSoldier>
+        </options>
+      </li>
+
+      <!-- Undead company of soldiers with a leader-->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <VU_RoamingSoldier>5</VU_RoamingSoldier>
+          <VU_RoamingSergeant>1</VU_RoamingSergeant>
+        </options>
+      </li>
+
+      <!-- Lots of leaders -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <VU_RoamingUndead>2</VU_RoamingUndead>
+          <VU_RoamingFootman>2</VU_RoamingFootman>
+          <VU_RoamingSoldier>2</VU_RoamingSoldier>
+          <VU_RoamingUndeadLeader>5</VU_RoamingUndeadLeader>
+          <VU_RoamingUndeadMaster>1</VU_RoamingUndeadMaster>
+        </options>
+      </li>
+
+      <!-- Mixed and a few leaders -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <VU_RoamingUndead>10</VU_RoamingUndead>
+          <VU_RoamingFootman>10</VU_RoamingFootman>
+          <VU_RoamingSoldier>10</VU_RoamingSoldier>
+          <VU_RoamingUndeadLeader>5</VU_RoamingUndeadLeader>
+          <VU_RoamingUndeadMaster>1</VU_RoamingUndeadMaster>
+        </options>
+      </li>
+
+      <li>
+        <!-- Lots of leaders -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <VU_RoamingUndead>2</VU_RoamingUndead>
+          <VU_RoamingFootman>2</VU_RoamingFootman>
+          <VU_RoamingSoldier>2</VU_RoamingSoldier>
+          <VU_RoamingUndeadLeader>5</VU_RoamingUndeadLeader>
+          <VU_RoamingUndeadMaster>1</VU_RoamingUndeadMaster>
+        </options>
+      </li>
+      <li>
+        <!-- Only leaders -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <VU_RoamingUndeadLeader>10</VU_RoamingUndeadLeader>
+          <VU_RoamingUndeadMaster>1</VU_RoamingUndeadMaster>
+        </options>
+      </li>
+
+      <li>
+        <!-- Imp Horde -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <VU_ImpFighter>10</VU_ImpFighter>
+          <VU_DemonWarrior>1</VU_DemonWarrior>
+          <VU_DemonCommander_Suc>1</VU_DemonCommander_Suc>
+        </options>
+      </li>
+
+      <li>
+        <!-- Demon Horde -->
+        <kindDef>Combat</kindDef>
+        <commonality>20</commonality>
+        <options>
+          <VU_ImpFighter>5</VU_ImpFighter>
+          <VU_DemonWarrior>15</VU_DemonWarrior>
+          <VU_DemonBrute>5</VU_DemonBrute>
+          <VU_DemonCommander>2</VU_DemonCommander>
+          <VU_DemonCommander_Suc>3</VU_DemonCommander_Suc>
+        </options>
+      </li>
+
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <VU_RoamingUndead>8</VU_RoamingUndead>
+          <VU_RoamingUndeadLeader>4</VU_RoamingUndeadLeader>
+          <VU_RoamingUndeadMaster>1</VU_RoamingUndeadMaster>
+        </options>
+      </li>
+      <!-- In case a mod spawns them...-->
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Tribal_Trader>1</Tribal_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <VU_RoamingUndead>7</VU_RoamingUndead>
+          <VU_RoamingUndeadLeader>7</VU_RoamingUndeadLeader>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <VU_RoamingUndead>7</VU_RoamingUndead>
+          <VU_RoamingUndeadLeader>7</VU_RoamingUndeadLeader>
+          <VU_RoamingUndeadMaster>5</VU_RoamingUndeadMaster>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Miner>1</Tribal_Miner>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <modExtensions>
+      <li Class="BigAndSmall.Factions">
+        <canUseDropPods>false</canUseDropPods>
+      </li>
+    </modExtensions>
+  </FactionDef>
+
+</Defs>
