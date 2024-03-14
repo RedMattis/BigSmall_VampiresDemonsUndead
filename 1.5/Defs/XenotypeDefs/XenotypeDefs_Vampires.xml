@@ -1,0 +1,125 @@
+<Defs>
+  <XenotypeDef Name="VU_VampireBase" Abstract="True">
+    <genes>
+      <li>Hemogenic</li>
+      <li>PerfectImmunity</li>
+      <li>VU_Lesser_Unliving_Resilience</li>
+      <li>DarkVision</li>
+      
+     </genes>
+  </XenotypeDef>
+
+  <XenotypeDef ParentName="VU_VampireBase">
+    <defName>VU_Nosferatu</defName>
+    <label>Nosferatu</label>
+    <description>A terrifying blood-drinking monster associated with diseases, maggots and filith.</description>
+    <inheritable>false</inheritable>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <iconPath>XenotypeIcons/VU_Nosferatu</iconPath>
+    <doubleXenotypeChances>
+      <Pigskin>0.02</Pigskin>
+      <Impid>0.02</Impid>
+      <Yttakin>0.02</Yttakin>
+      <Waster>0.25</Waster>
+      <Dirtmole>0.05</Dirtmole>
+    </doubleXenotypeChances>
+    <genes>
+      <li>Bloodfeeder</li>
+      <li>BS_Xenolocked</li>
+    
+      <li>XenogermReimplanter</li>
+      <li>LongjumpLegs</li>
+      
+      <li>HemogenDrain</li>
+      <!-- <li>VU_GreaterHemogenDrain</li> -->
+      
+      <li>Deathless</li>
+      <li>VU_Unliving</li>
+      <li>TotalHealing</li>
+      <li>ToxResist_Total</li>
+      
+      <li>BS_Pain_None</li>
+      <li>Mood_Depressive</li>
+      <li>VU_DarknessWoundHealing_Fast</li>
+      <li>Sterile</li>
+      <li>MinTemp_LargeDecrease</li>
+      <li>MaxTemp_LargeIncrease</li>
+      <li>VU_DarknessMelee</li>
+      <li>Sleepy</li>
+      <li>FireTerror</li>
+      <li>FireWeakness</li>
+      <li>VU_UVSensitivity_VeryIntense</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>VU_Darkness_MoveSpeed_VeryQuick</li>
+      
+      <li>VU_Libido_None</li>
+      <li>VU_Pallor</li>
+      <li>Beauty_VeryUgly</li>
+      <li>Head_Gaunt</li>
+      <li>Skin_SlateGray</li>
+      <li>VU_DarkPallorSkin</li>
+      <!-- <li>VU_ZombieSkin</li> -->
+      <li>Hair_BaldOnly</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>Learning_Slow</li>
+      
+      <!-- <li>Cannibal</li> -->
+      <li>StrongStomach</li>
+      <li>RobustDigestion</li>
+      <li>BS_NoFood</li>
+      
+      <li MayRequire="vanillaracesexpanded.sanguophage">VRE_AnimalFeeder</li>
+      <li MayRequire="sarg.alphagenes">AG_DemonEars</li>
+     </genes>
+     <forbiddenWeaponClasses>
+      <li>Ranged</li>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </forbiddenWeaponClasses>
+    <factionlessGenerationWeight>0.05</factionlessGenerationWeight>
+  </XenotypeDef>
+
+  <XenotypeDef ParentName="VU_VampireBase">
+    <defName>VU_WhiteRose</defName>
+    <label>White Rose</label>
+    <description>They are hard to tell apart from normal humans and with an almost certainly unnatural abillity to charm those around them. White Rose vampires are often found pulling the strings all over society and are very difficult to root out.</description>
+    <inheritable>false</inheritable>
+    <combatPowerFactor>1.3</combatPowerFactor>
+    <iconPath>XenotypeIcons/VU_WhiteRose</iconPath>
+    <doubleXenotypeChances>
+      <Impid>0.25</Impid>
+    </doubleXenotypeChances>
+    <genes>
+      <li>VU_WhiteRoseBite</li>
+      <li>VU_GreaterHemogenDrain</li>
+      <li>XenogermReimplanter</li>
+      
+      <li>Mood_Depressive</li>
+      <li>Sleepy</li>
+      <li>Ageless</li>
+      <li>Pain_Reduced</li>
+      <li>DiseaseFree</li>
+      <li>Body_Thin</li>
+      <li>Body_Standard</li>
+      <li>Libido_High</li>
+      <li>VU_NearSterile</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>AptitudeRemarkable_Social</li>
+      <li>WoundHealing_Fast</li>
+      <li>Superclotting</li>
+      <li>UVSensitivity_Mild</li>
+      <li>ToxResist_Partial</li>
+      <li>VU_DarknessMelee</li>
+      <li>TotalHealing</li>
+      <li>BS_EverFertile</li>
+      
+      <li MayRequire="vanillaracesexpanded.highmate">VRE_HighmateHair</li>
+      <li>Beauty_Beautiful</li>
+      <li>VU_VampireLover</li>
+     </genes>
+     <factionlessGenerationWeight>1</factionlessGenerationWeight>
+  </XenotypeDef>
+  
+  
+  
+</Defs>

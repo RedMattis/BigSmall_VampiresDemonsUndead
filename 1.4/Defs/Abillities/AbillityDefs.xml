@@ -1,0 +1,40 @@
+<Defs>
+  
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>VU_LycantropeInfect</defName>
+    <label>infect with lycantropy</label>
+    <description>Infect the target with lycantropy. Only works on allies, to infect other engage them in combat.</description>
+    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <category>Sanguophage</category>
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <hostile>false</hostile>
+    <aiCanUse>false</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>2</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>false</canTargetBloodfeeders>
+        <onlyTargetColonistsOrPrisoners>true</onlyTargetColonistsOrPrisoners>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_LycanInfect">
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BloodSplash</fleckDef>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

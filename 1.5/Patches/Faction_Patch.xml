@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+  <Operation Class="PatchOperationConditional">
+		<!-- <success>Always</success> -->
+		<xpath>/Defs/PawnsArrivalModeDef[defName = "EdgeDrop"]/selectionWeightCurvesPerFaction</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "EdgeDrop"]</xpath>
+			<value>
+				<selectionWeightCurvesPerFaction>
+          <li>
+            <faction>VU_Roaming_Undead</faction>
+              <selectionWeightPerPointsCurve>
+                <points>
+                  <li>(0, 0)</li>
+                </points>
+            </selectionWeightPerPointsCurve>
+          </li>
+        </selectionWeightCurvesPerFaction>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "EdgeDrop"]/selectionWeightCurvesPerFaction</xpath>
+			<value>
+        <li>
+          <faction>VU_Roaming_Undead</faction>
+          <selectionWeightPerPointsCurve>
+            <points>
+              <li>(0, 0)</li>
+            </points>
+          </selectionWeightPerPointsCurve>
+        </li>
+      </value>
+		</match>
+	</Operation>
+
+  <Operation Class="PatchOperationConditional">
+		<!-- <success>Always</success> -->
+		<xpath>/Defs/PawnsArrivalModeDef[defName = "EdgeDropGroups"]/selectionWeightCurvesPerFaction</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "EdgeDropGroups"]</xpath>
+			<value>
+				<selectionWeightCurvesPerFaction>
+          <li>
+            <faction>VU_Roaming_Undead</faction>
+              <selectionWeightPerPointsCurve>
+                <points>
+                  <li>(0, 0)</li>
+                </points>
+            </selectionWeightPerPointsCurve>
+          </li>
+        </selectionWeightCurvesPerFaction>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "EdgeDropGroups"]/selectionWeightCurvesPerFaction</xpath>
+			<value>
+        <li>
+          <faction>VU_Roaming_Undead</faction>
+          <selectionWeightPerPointsCurve>
+            <points>
+              <li>(0, 0)</li>
+            </points>
+          </selectionWeightPerPointsCurve>
+        </li>
+      </value>
+		</match>
+	</Operation>
+
+  <Operation Class="PatchOperationConditional">
+		<!-- <success>Always</success> -->
+		<xpath>/Defs/PawnsArrivalModeDef[defName = "CenterDrop"]/selectionWeightCurvesPerFaction</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "CenterDrop"]</xpath>
+			<value>
+				<selectionWeightCurvesPerFaction>
+          <li>
+            <faction>VU_Roaming_Undead</faction>
+              <selectionWeightPerPointsCurve>
+                <points>
+                  <li>(0, 0)</li>
+                </points>
+            </selectionWeightPerPointsCurve>
+          </li>
+        </selectionWeightCurvesPerFaction>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "CenterDrop"]/selectionWeightCurvesPerFaction</xpath>
+			<value>
+        <li>
+          <faction>VU_Roaming_Undead</faction>
+          <selectionWeightPerPointsCurve>
+            <points>
+              <li>(0, 0)</li>
+            </points>
+          </selectionWeightPerPointsCurve>
+        </li>
+      </value>
+		</match>
+	</Operation>
+
+  <Operation Class="PatchOperationConditional">
+		<!-- <success>Always</success> -->
+		<xpath>/Defs/PawnsArrivalModeDef[defName = "RandomDrop"]/selectionWeightCurvesPerFaction</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "RandomDrop"]</xpath>
+			<value>
+				<selectionWeightCurvesPerFaction>
+          <li>
+            <faction>VU_Roaming_Undead</faction>
+              <selectionWeightPerPointsCurve>
+                <points>
+                  <li>(0, 0)</li>
+                </points>
+            </selectionWeightPerPointsCurve>
+          </li>
+        </selectionWeightCurvesPerFaction>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/PawnsArrivalModeDef[defName = "RandomDrop"]/selectionWeightCurvesPerFaction</xpath>
+			<value>
+        <li>
+          <faction>VU_Roaming_Undead</faction>
+          <selectionWeightPerPointsCurve>
+            <points>
+              <li>(0, 0)</li>
+            </points>
+          </selectionWeightPerPointsCurve>
+        </li>
+      </value>
+		</match>
+	</Operation>
+
+</Patch>

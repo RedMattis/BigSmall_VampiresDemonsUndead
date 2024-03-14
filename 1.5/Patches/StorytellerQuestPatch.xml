@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/StorytellerDef[@Name="BaseStoryteller"]/comps</xpath>
+		<value>
+			<li Class="StorytellerCompProperties_SingleOnceFixed">
+				<fireAfterDaysPassed>99</fireAfterDaysPassed>
+				<incident MayRequire="Ludeon.RimWorld.Royalty">BS_GiveQuest_Escaped_Monster</incident>
+				<skipIfOnExtremeBiome>false</skipIfOnExtremeBiome>
+				<allowedTargetTags>
+					<li>World</li>
+				</allowedTargetTags>
+			</li>
+		</value>
+	</Operation>
+</Patch>

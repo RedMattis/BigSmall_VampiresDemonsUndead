@@ -1,0 +1,155 @@
+<Defs>
+
+  <XenotypeDef>
+    <defName>VU_Returned</defName>
+    <label>Returned</label>
+    <description>A person who has come back from death for an unknown reason.</description>
+    <descriptionShort>Revenant.</descriptionShort>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <doubleXenotypeChances>
+      <Pigskin>0.02</Pigskin>
+      <Impid>0.02</Impid>
+      <Yttakin>0.02</Yttakin>
+      <Neanderthal>0.02</Neanderthal>
+      <Waster>0.02</Waster>
+      <Dirtmole>0.02</Dirtmole>
+      <BS_Svartalf MayRequire="RedMattis.BigSmall">0.05</BS_Svartalf>
+      <BS_FrostJotun MayRequire="RedMattis.BigSmall">0.01</BS_FrostJotun>
+      <BS_Jotun MayRequire="RedMattis.BigSmall">0.01</BS_Jotun>
+      <BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.02</BS_Half_Jotun>
+    </doubleXenotypeChances>
+    <genes>
+      <li>BS_Deathlike</li>
+      <li>VU_NoBlood</li>
+      <li>VU_Unliving</li>
+      <li>VU_Unliving_Resilience</li>
+      <li>VU_UltraRapidAging</li>
+      <li>Deathless</li>
+      <li>PerfectImmunity</li>
+      <li>Sleepy</li>
+      <li>WoundHealing_VerySlow</li>
+      <li>BS_PainNumb</li>
+      <li>Mood_Pessimist</li>
+      <li>Sterile</li>
+      <li>MinTemp_LargeDecrease</li>
+      <li>MaxTemp_LargeIncrease</li>
+      <li>Head_Gaunt</li>
+      <li>Skin_SlateGray</li>
+      <li>VU_ZombieSkin</li>
+      <li>VU_NosferatuSkin</li>
+      <!-- <li>Sleepy</li> -->
+      <li>VU_Pallor</li>
+      <li>VU_Libido_None</li>
+      <li>Hair_Gray</li>
+      <li>Hair_SnowWhite</li>
+      <li>Hair_MidBlack</li>
+     </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>VU_Ghoul</defName>
+    <label>Ghoul</label>
+    <description>Ghouls are frightening creatures known to dig up and devour corpses, when no corpses are available they are happy to feast on the very recently alive.</description>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <iconPath>GeneIcons/BS_Zombie</iconPath>
+    <doubleXenotypeChances>
+      <Pigskin>0.10</Pigskin>
+      <Yttakin>0.10</Yttakin>
+      <Neanderthal>0.10</Neanderthal>
+      <Waster>0.10</Waster>
+      <Dirtmole>0.05</Dirtmole>
+      <BS_Ogre MayRequire="RedMattis.BigSmall">0.05</BS_Ogre>
+      <BS_GreatOgre MayRequire="RedMattis.BigSmall">0.01</BS_GreatOgre>
+    </doubleXenotypeChances>
+    <genes>
+      <!-- <li>VU_UltraRapidAging</li> -->
+      <li>BS_Deathlike</li>  <!-- I figure the ghouls might be kind of living-like, but just not set off zombies. -->
+			<li>PerfectImmunity</li>
+			<li>VU_Unliving</li>
+			<li>VU_Lesser_Unliving_Resilience</li>
+			<li>BS_StickyAcidSpray</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>VU_Darkness_MoveSpeed_Quick</li>
+			<li>Mood_Sanguine</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>ToxResist_Total</li>
+			<li>UVSensitivity_Mild</li>
+			<li>FireTerror</li>
+			<li>Pain_Reduced</li>
+			<li>VU_Libido_None</li>
+			<li>VU_NearSterile</li>
+			<li>Beauty_Ugly</li>
+			<li>Hair_BaldOnly</li>
+			<li>Head_Gaunt</li>
+      <li>Jaw_Baseline</li> <!--So some of them have regular human heads.-->
+			<li>VoiceRoar</li>
+			<li>Hair_Gray</li>
+			<li>Hair_MidBlack</li>
+			<li>Hair_DarkBlack</li>
+			<li>Skin_Green</li>
+			<li>VU_NosferatuSkin</li>
+			<li>VU_ZombieSkin</li>
+			<li>Cannibal</li>
+			<li>VU_Pallor</li>
+			<li>Learning_Slow</li>
+			<li>Nearsighted</li>
+			<li>DarkVision</li>
+      <li>Aggression_Aggressive</li>
+			<li MayRequire="sarg.alphagenes">AG_ClawedHands</li>
+      <li>BS_SimpleMind</li>
+      <li>BS_Diet_Carnivore</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudePoor_Plants</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudePoor_Medicine</li>
+			<li>AptitudePoor_Intellectual</li>
+      <li>AptitudePoor_Social</li>
+      <li>AptitudePoor_Shooting</li>
+      <li>BS_NightOwl</li>
+     </genes>
+     <forbiddenWeaponClasses>
+      <li>Ranged</li>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+      <li>RangedLight</li>
+    </forbiddenWeaponClasses>
+    <factionlessGenerationWeight>0.5</factionlessGenerationWeight>
+  </XenotypeDef>
+
+  
+  <!-- <XenotypeDef> -->
+    <!-- <defName>VU_Revenant</defName> -->
+    <!-- <label>Revenant</label> -->
+    <!-- <description>Said to be spirits of the dead who has returned to the world to right some wrongs..</description> -->
+    <!-- <descriptionShort>Revenant.</descriptionShort> -->
+    <!-- <inheritable>true</inheritable> -->
+    <!-- <combatPowerFactor>1</combatPowerFactor> -->
+    <!-- <iconPath>GeneIcons/VU_Skull</iconPath> -->
+    <!-- <genes> -->
+      <!-- <li>VU_NoBlood</li> -->
+      <!-- <li>VU_Unliving</li> -->
+      <!-- <li>VU_Lesser_Unliving_Resilience</li> -->
+      <!-- <li>Robust</li> -->
+      <!-- <li>Deathless</li> -->
+      <!-- <li>PerfectImmunity</li> -->
+      <!-- <li>VerySleepy</li> -->
+      <!-- <li>WoundHealing_VerySlow</li> -->
+      <!-- <li>BS_Pain_None</li> -->
+      <!-- <li>Mood_Optimist</li> -->
+      <!-- <li>Sterile</li> -->
+      <!-- <li>MinTemp_LargeDecrease</li> -->
+      <!-- <li>MaxTemp_LargeIncrease</li> -->
+      <!-- <li>FireWeakness</li> -->
+      
+      <!-- <li>Libido_Low</li> -->
+     <!-- </genes> -->
+  <!-- </XenotypeDef> -->
+  
+</Defs>

@@ -1,0 +1,93 @@
+<Defs>
+  <ScenarioDef>
+    <defName>VU_RunawayMonsters</defName>
+    <label>Runaway Monsters</label>
+    <description>The three of you meet by happenstance trying to flee the many people hunting you.</description>
+    <scenario>
+      <summary>The three of you meet by happenstance trying to flee the many people hunting you.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>VU_MonsterPlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <pawnChoiceCount>8</pawnChoiceCount>
+          <!-- <overrideKinds>
+            <li>
+              <xenotype>BS_FrostJotunInBlue</xenotype>
+              <pawnKind>BS_WomanInBlue</pawnKind>
+            </li>
+          </overrideKinds> -->
+          <xenotypeCounts>
+            <li>
+              <requiredAtStart>true</requiredAtStart>
+              <xenotype>VU_Dracul</xenotype>
+              <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+            </li>
+            <li>
+              <requiredAtStart>true</requiredAtStart>
+              <xenotype>VU_Lycantrope</xenotype>
+              <allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
+            </li>
+            <li>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+              <xenotype>VU_Frankenstein</xenotype>
+              <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+            </li>
+          </xenotypeCounts>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Hunted by people across the Rimworld the three of you decide to find a secluded place to hide.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>400</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>10</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>WoodLog</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>StartingThing_Defined</def>
+          <thingDef>BS_CreateArchiteXenogerm</thingDef>
+          <count>1</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gun_Revolver</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>Steel</stuff>
+          <count>2</count>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+</Defs>

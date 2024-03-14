@@ -1,0 +1,144 @@
+<Defs>
+  <AbilityDef Name="VU_BiteBase" Abstract="True" ParentName="AbilityTouchBase">
+    <label>bloodfeed</label>
+    <description>Bite the target and drink some of their blood. Depending on the vampire this may have side-effects.</description>
+    <iconPath>GeneIcons/VU_LoveBite</iconPath>
+    <category>Sanguophage</category>
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>2</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>false</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+  <AbilityDef ParentName="VU_BiteBase">
+    <defName>VU_WhiteRoseBite</defName>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_WhiteRoseBite">
+        <hemogenGain>0.2</hemogenGain>
+        <bloodFilthToSpawnRange>1</bloodFilthToSpawnRange>
+        <thoughtDefToGiveTarget>VU_WhiteRoseFedOn</thoughtDefToGiveTarget>
+        <opinionThoughtDefToGiveTarget>VU_WhiteRoseFedOn_Social</opinionThoughtDefToGiveTarget>
+        <resistanceGain>0</resistanceGain>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BloodSplash</fleckDef>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <ThoughtDef>
+    <defName>VU_WhiteRoseFedOn_Social</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>60</durationDays>
+    <stackLimit>50</stackLimit>
+    <stackLimitForSameOtherPawn>10</stackLimitForSameOtherPawn>
+    <stages>
+      <li>
+        <label>fed on</label>
+        <baseOpinionOffset>10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>VU_WhiteRoseFedOn</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stages>
+      <li>
+        <label>fed on by {0}</label>
+        <description>I was violated by a bloodfeeder like some kind of livestock, but it was strangely pleasant</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <AbilityDef ParentName="VU_BiteBase">
+    <defName>VU_DraculBite</defName>
+    <description Inherit="False">Bite the target and drink some of their blood. If used on an enemy they will become enslaved should they reanimate</description>
+    <iconPath Inherit="False">GeneIcons/VU_DraculBite</iconPath>
+    <verbProperties Inherit="False">
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>2</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>false</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_DraculBite">
+        <hemogenGain>0.2</hemogenGain>
+        <bloodFilthToSpawnRange>1</bloodFilthToSpawnRange>
+        <thoughtDefToGiveTarget>FedOn</thoughtDefToGiveTarget>
+        <opinionThoughtDefToGiveTarget>FedOn_Social</opinionThoughtDefToGiveTarget>
+        <resistanceGain>1</resistanceGain>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BloodSplash</fleckDef>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>VU_DraculInfect</defName>
+    <label>infect with vampirism</label>
+    <description>Infect the target with vampirism or force their condition to dramatically worsen. If used on an enemy they will become enslaved when they reanimate. Also works on Corpses.</description>
+    <iconPath>GeneIcons/VU_DraculInfect</iconPath>
+    <category>Sanguophage</category>
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <hostile>true</hostile>
+    <aiCanUse>false</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>2</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>false</canTargetBloodfeeders>
+        <canTargetCorpses>true</canTargetCorpses>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_DraculInfect">
+      </li>
+      <li Class="CompProperties_AbilityHemogenCost">
+        <hemogenCost>0.45</hemogenCost>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BloodSplash</fleckDef>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

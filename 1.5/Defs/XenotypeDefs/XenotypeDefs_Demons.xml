@@ -1,0 +1,17 @@
+<Defs>
+  <XenotypeDef ParentName="BS_Succubus_A">
+    <defName>VU_Succubus</defName>
+  </XenotypeDef>
+
+  <XenotypeDef ParentName="BS_Hellguard_A">
+    <defName>VU_Hellguard</defName>
+  </XenotypeDef>
+  
+  <XenotypeDef ParentName="BS_GateKeeper_A">
+    <defName>VU_Gatekeeper</defName>
+  </XenotypeDef>
+
+  <XenotypeDef  ParentName="BS_Imp_A">
+    <defName>VU_Imp</defName>
+  </XenotypeDef>
+</Defs>

@@ -1,0 +1,103 @@
+<Defs>
+
+  <PawnKindDef ParentName="VU_RoamingUndead_Medieval">
+    <defName>VU_ImpFighter</defName>
+    <label>pest</label>
+    <combatPower>80</combatPower>
+
+    <xenotypeSet Inherit="False">
+      <xenotypeChances Inherit="False">
+        <VU_Imp>999</VU_Imp>
+      </xenotypeChances>
+    </xenotypeSet>
+    <weaponMoney>500~1500</weaponMoney>
+    <apparelMoney>0~800</apparelMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicRangedHeavy</li>
+      <li>MedievalRanged</li>
+      <li>MedievalRangedAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="VU_RoamingUndeadLeader_Medieval">
+    <defName>VU_DemonWarrior</defName>
+    <label>hellguard</label>
+    <combatPower>120</combatPower>
+
+    <xenotypeSet Inherit="False">
+      <xenotypeChances Inherit="False">
+        <VU_Hellguard>999</VU_Hellguard>
+      </xenotypeChances>
+    </xenotypeSet>
+    <weaponMoney>1000~3700</weaponMoney>
+    <apparelMoney>1000~3000</apparelMoney>
+    <weaponTags>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcanHalberd</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="VU_RoamingUndeadLeader_Medieval">
+    <defName>VU_DemonCommander</defName>
+    <label>commander</label>
+    <combatPower>135</combatPower>
+
+    <apparelMoney>2000~8000</apparelMoney>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances Inherit="False">
+        <VU_Hellguard>999</VU_Hellguard>
+      </xenotypeChances>
+    </xenotypeSet>
+    <weaponMoney>1000~3700</weaponMoney>
+    <weaponTags>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcanHalberd</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="VU_RoamingUndeadLeader_Medieval">
+    <defName>VU_DemonCommander_Suc</defName>
+    <label>noble</label>
+    <combatPower>135</combatPower>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+
+    <apparelMoney>2000~8000</apparelMoney>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances Inherit="False">
+        <VU_Succubus>999</VU_Succubus>
+      </xenotypeChances>
+    </xenotypeSet>
+    <weaponMoney>1000~3700</weaponMoney>
+    <weaponTags>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcanHalberd</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="VU_RoamingUndeadLeader_Medieval">
+    <defName>VU_DemonBrute</defName>
+    <label>gatekeeper</label>
+    <combatPower>135</combatPower>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances Inherit="False">
+        <VU_Gatekeeper>999</VU_Gatekeeper>
+      </xenotypeChances>
+    </xenotypeSet>
+    <weaponMoney>1500~3700</weaponMoney>
+    <weaponTags Inherit="False">
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcanHalberd</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
+      <li>HerculeanWeapon</li>
+      <li>MedievalMeleeGiant</li>
+      <li>MedievalMeleeAdvancedGiant</li>
+    </weaponTags>
+  </PawnKindDef>
+</Defs>

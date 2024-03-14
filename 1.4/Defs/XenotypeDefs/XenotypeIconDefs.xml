@@ -1,0 +1,28 @@
+<Defs>
+
+  <XenotypeIconDef>
+    <defName>VU_DraculIcon</defName>
+    <texPath>XenotypeIcons/VU_Dracul</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>VU_DraculFeralIcon</defName>
+    <texPath>XenotypeIcons/VU_DraculFeral</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>VU_DraculSpawnIcon</defName>
+    <texPath>XenotypeIcons/VU_DraculSpawn</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>VU_WhiteRoseIcon</defName>
+    <texPath>XenotypeIcons/VU_WhiteRose</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>VU_NosferatuIcon</defName>
+    <texPath>XenotypeIcons/VU_Nosferatu</texPath>
+  </XenotypeIconDef>
+
+</Defs>

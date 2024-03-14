@@ -1,8 +1,10 @@
 <ModMetaData>
-	<name>Vampires, Demons, and the Undead</name>
+	<!-- <name>Vampires, Demons, and the Undead</name> -->
+	<name>Big and Small - Vampires and the Undead</name>
 	<author>RedMattis</author>
 	<supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
   <packageId>RedMattis.Undead</packageId>
 	<modDependencies>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!--Patch it so Sanguophage spawning stuff can spawn vampries from this mod-->
+  <!--Prefer spawning the advanced vampires since chances are this will be "Master vampires."-->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/PawnKindDef[@Name="SanguophageBase"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+      <VU_WhiteRose>350</VU_WhiteRose>
+      <VU_Dracul_Progenitor>350</VU_Dracul_Progenitor>
+      <VU_Dracul_Mature>100</VU_Dracul_Mature>
+      <VU_Nosferatu>150</VU_Nosferatu>
+		</value>
+	</Operation>
+</Patch>
