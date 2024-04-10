@@ -9,6 +9,7 @@
     <iconPath>GeneIcons/BS_Frankenstein</iconPath>
     <genes>
       <li>VU_NoBlood</li>
+      <li>BS_IntegrateGenes</li>
       <li>VU_Lesser_Unliving_Resilience</li>
 			<li>Immunity_Strong</li>
 			<li>WoundHealing_Slow</li>

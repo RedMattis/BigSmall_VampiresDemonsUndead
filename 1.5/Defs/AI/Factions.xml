@@ -291,7 +291,7 @@
       <li>
         <!-- Imp Horde -->
         <kindDef>Combat</kindDef>
-        <commonality>10</commonality>
+        <commonality>5</commonality>
         <options>
           <VU_ImpFighter>10</VU_ImpFighter>
           <VU_DemonWarrior>1</VU_DemonWarrior>
@@ -302,7 +302,7 @@
       <li>
         <!-- Demon Horde -->
         <kindDef>Combat</kindDef>
-        <commonality>20</commonality>
+        <commonality>5</commonality>
         <options>
           <VU_ImpFighter>5</VU_ImpFighter>
           <VU_DemonWarrior>15</VU_DemonWarrior>
