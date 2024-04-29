@@ -1,0 +1,10 @@
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/MutantDef[defName="Ghoul"]/disablesGenes</xpath>
+    <value>
+      <li>VU_Involuntary_Werewolf</li>
+    </value>
+  </Operation>
+
+</Patch>

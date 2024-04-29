@@ -11,6 +11,7 @@
     <li>/</li>
     <li>1.5</li>
     <li IfModActive="Ludeon.Rimworld.Royalty">1.5/Royalty</li>
+    <li IfModActive="Ludeon.Rimworld.Anomaly">1.5/Anomaly</li>
     <!-- <li IfModActive="erdelf.HumanoidAlienRaces">1.4/HAR</li> -->
     <!-- <li IfModNotActive ="erdelf.HumanoidAlienRaces">1.4/No_HAR</li> -->
   </v1.5>

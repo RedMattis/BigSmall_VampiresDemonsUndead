@@ -116,6 +116,7 @@
       <li>AptitudePoor_Social</li>
       <li>AptitudePoor_Shooting</li>
       <li>BS_NightOwl</li>
+      <li>BS_SlowAging</li>
      </genes>
      <forbiddenWeaponClasses>
       <li>Ranged</li>
