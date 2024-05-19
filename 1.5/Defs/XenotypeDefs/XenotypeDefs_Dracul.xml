@@ -82,7 +82,7 @@
     <descriptionShort>The Dracul and Draculina are often considered 'classical' vampires.</descriptionShort>
     <inheritable>false</inheritable>
     <combatPowerFactor>1.5</combatPowerFactor>
-    <iconPath>XenotypeIcons/VU_DraculSpawn</iconPath>
+    <iconPath>Xenotypes/BS_DraculSpawn</iconPath>
     <genes>
       <li>Ageless</li>
 			<li>Deathless</li>
@@ -149,7 +149,7 @@
     <descriptionShort>The Dracul and Draculina are often considered 'classical' vampires.</descriptionShort>
     <inheritable>false</inheritable>
     <combatPowerFactor>1.8</combatPowerFactor>
-    <iconPath>XenotypeIcons/VU_DraculSpawn</iconPath>
+    <iconPath>Xenotypes/BS_DraculNeonate</iconPath>
     <genes>
       <li>Ageless</li>
 			<li>Deathless</li>
@@ -209,7 +209,7 @@
     <descriptionShort>The Dracul and Draculina are often considered 'classical' vampires.</descriptionShort>
     <inheritable>false</inheritable>
     <combatPowerFactor>1.8</combatPowerFactor>
-    <iconPath>XenotypeIcons/VU_Dracul</iconPath>
+    <iconPath>Xenotypes/BS_BS_Dracul</iconPath>
     <genes>
       <li>Ageless</li>
 			<li>ArchiteMetabolism</li>
@@ -272,7 +272,7 @@
     <descriptionShort>A fully mature Dracul or Draculina Master. Very rare, but unfortuantely they are terrifyingly powerful vampires.</descriptionShort>
     <inheritable>false</inheritable>
     <combatPowerFactor>1.8</combatPowerFactor>
-    <iconPath>XenotypeIcons/VU_Dracul</iconPath>
+    <iconPath>Xenotypes/BS_DraculMaster</iconPath>
     <genes>
       <li>Ageless</li>
 			<li>ArchiteMetabolism</li>
@@ -334,7 +334,7 @@
     <description>Sometimes the victims of vampires only partially recover from their vampirism.</description>
     <inheritable>true</inheritable>
     <combatPowerFactor>1.3</combatPowerFactor>
-    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <iconPath>Xenotypes/BS_HalfVampire</iconPath>
     <genes>
       <li>Ageless</li>
       <li>DiseaseFree</li>

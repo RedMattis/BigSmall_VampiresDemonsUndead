@@ -150,6 +150,7 @@
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+        <hideGene>true</hideGene>
 			</li>
 		</modExtensions>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -181,6 +182,7 @@
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+        <hideGene>true</hideGene>
 			</li>
 		</modExtensions>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -210,6 +212,7 @@
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+        <hideGene>true</hideGene>
 			</li>
 		</modExtensions>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -239,6 +242,7 @@
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+        <hideGene>true</hideGene>
 			</li>
 		</modExtensions>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -265,6 +269,7 @@
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+        <hideGene>true</hideGene>
 			</li>
 		</modExtensions>
     <statOffsets>
@@ -296,6 +301,7 @@
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
+        <hideGene>true</hideGene>
 			</li>
 		</modExtensions>
     <statOffsets>

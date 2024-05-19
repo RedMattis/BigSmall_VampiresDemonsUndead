@@ -15,7 +15,7 @@
     <description>A terrifying blood-drinking monster associated with diseases, maggots and filith.</description>
     <inheritable>false</inheritable>
     <combatPowerFactor>1.5</combatPowerFactor>
-    <iconPath>XenotypeIcons/VU_Nosferatu</iconPath>
+    <iconPath>Xenotypes/BS_Nosferatu</iconPath>
     <doubleXenotypeChances>
       <Pigskin>0.02</Pigskin>
       <Impid>0.02</Impid>
@@ -85,7 +85,7 @@
     <description>They are hard to tell apart from normal humans and with an almost certainly unnatural abillity to charm those around them. White Rose vampires are often found pulling the strings all over society and are very difficult to root out.</description>
     <inheritable>false</inheritable>
     <combatPowerFactor>1.3</combatPowerFactor>
-    <iconPath>XenotypeIcons/VU_WhiteRose</iconPath>
+    <iconPath>Xenotypes/BS_WhiteRose</iconPath>
     <doubleXenotypeChances>
       <Impid>0.25</Impid>
     </doubleXenotypeChances>

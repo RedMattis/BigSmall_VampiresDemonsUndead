@@ -5,7 +5,7 @@
     <description>A person with herditary lycanthropy</description>
     <inheritable>true</inheritable>
     <combatPowerFactor>2</combatPowerFactor>
-    <iconPath>GeneIcons/BS_werewolfsnoot</iconPath>
+    <iconPath>Xenotypes/BS_Lycanthrope_2</iconPath>
     <doubleXenotypeChances>
       <Pigskin>0.10</Pigskin>
     </doubleXenotypeChances>

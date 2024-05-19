@@ -6,7 +6,7 @@
     <descriptionShort>An undead being built up of parts from multiple mostly-dead bodies.</descriptionShort>
     <inheritable>true</inheritable>
     <combatPowerFactor>1.5</combatPowerFactor>
-    <iconPath>GeneIcons/BS_Frankenstein</iconPath>
+    <iconPath>Xenotypes/BS_Frankenstein</iconPath>
     <genes>
       <li>VU_NoBlood</li>
       <li>BS_IntegrateGenes</li>

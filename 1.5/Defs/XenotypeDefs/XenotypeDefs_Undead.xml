@@ -7,7 +7,7 @@
     <descriptionShort>Revenant.</descriptionShort>
     <inheritable>true</inheritable>
     <combatPowerFactor>1.5</combatPowerFactor>
-    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <iconPath>Xenotypes/BS_Returned</iconPath>
     <doubleXenotypeChances>
       <Pigskin>0.02</Pigskin>
       <Impid>0.02</Impid>
@@ -47,6 +47,7 @@
       <li>Hair_MidBlack</li>
       <li MayRequire="ludeon.rimworld.anomaly">BS_GhoulHead</li>
       <li>Jaw_Baseline</li>
+      <li>ToxResist_Total</li>
      </genes>
   </XenotypeDef>
 
