@@ -52,6 +52,7 @@
 			<li>AptitudeStrong_Melee</li>
       <li>VU_DraculInfectiousBite</li>
 			<li>BS_NoFood</li>
+			<li>BS_LesserDeathless</li>
 			
 			<li MayRequire="vanillaracesexpanded.sanguophage">VRE_CorpseFeeder</li>
       <li MayRequire="biotexpans.core">BTE_FeralMight</li>
@@ -128,6 +129,7 @@
 			<li>AptitudePoor_Social</li>
       <li>VU_DraculInfectiousBite</li>
 			<li>BS_NoFood</li>
+			<li>BS_LesserDeathless</li>
     </genes>
     <factionlessGenerationWeight>0</factionlessGenerationWeight>
     <forbiddenWeaponClasses>
@@ -320,6 +322,7 @@
 			<li MayRequire="vanillaracesexpanded.sanguophage">VRE_SanguoFeeder</li>
 			<li MayRequire="vanillaracesexpanded.sanguophage">VRE_Hemosmosis</li>
 			<li>BS_NoFood</li>
+			<li MayRequire="ludeon.rimworld.anomaly">BS_GreaterDeathless</li>
     </genes>
     <factionlessGenerationWeight>0.001</factionlessGenerationWeight>
     <doubleXenotypeChances>

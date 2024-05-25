@@ -4,7 +4,7 @@
     <defName>VU_Returned</defName>
     <label>Returned</label>
     <description>A person who has come back from death for an unknown reason.</description>
-    <descriptionShort>Revenant.</descriptionShort>
+    <descriptionShort>Intelligent undead</descriptionShort>
     <inheritable>true</inheritable>
     <combatPowerFactor>1.5</combatPowerFactor>
     <iconPath>Xenotypes/BS_Returned</iconPath>
@@ -48,6 +48,52 @@
       <li MayRequire="ludeon.rimworld.anomaly">BS_GhoulHead</li>
       <li>Jaw_Baseline</li>
       <li>ToxResist_Total</li>
+      <li>BS_LesserDeathless</li>
+     </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>VU_Revenant</defName>
+    <label>Revenant</label>
+    <description>An individual who keeps comming back again and again and again by transfering their essence to dead bodies. Surely there must be some way to kill them off for good?</description>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <iconPath>Xenotypes/BS_Ghost</iconPath>
+    <doubleXenotypeChances>
+      <Pigskin>0.02</Pigskin>
+      <Impid>0.02</Impid>
+      <Yttakin>0.02</Yttakin>
+      <Neanderthal>0.02</Neanderthal>
+      <Waster>0.02</Waster>
+      <Dirtmole>0.02</Dirtmole>
+      <BS_Svartalf MayRequire="RedMattis.BigSmall">0.05</BS_Svartalf>
+      <BS_FrostJotun MayRequire="RedMattis.BigSmall">0.01</BS_FrostJotun>
+      <BS_Jotun MayRequire="RedMattis.BigSmall">0.01</BS_Jotun>
+      <BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.02</BS_Half_Jotun>
+    </doubleXenotypeChances>
+    <genes>
+      <li>VU_NoBlood</li>
+      <li>VU_Unliving</li>
+      <li>VU_Lesser_Unliving_Resilience</li>
+      <li>DiseaseFree</li>
+      <li>PerfectImmunity</li>
+      <li>ArchiteMetabolism</li>
+      <li>Ageless</li>
+      <li>WoundHealing_Fast</li>
+      <li>BS_GeneStabilizing_Great</li>
+      <li>Pain_Reduced</li>
+      <li>Sterile</li>
+      <li>MinTemp_LargeDecrease</li>
+      <li>MaxTemp_SmallDecrease</li>
+      <li>VU_NosferatuSkin</li>
+      <li>Libido_Low</li>
+      <li>Hair_Gray</li>
+      <li>Hair_SnowWhite</li>
+      <li>Hair_MidBlack</li>
+      <li>ToxResist_Total</li>
+      <li>FireWeakness</li>
+      <li>BS_ReturningSoul</li>
+      <li>VU_Pallor</li>
      </genes>
   </XenotypeDef>
 
