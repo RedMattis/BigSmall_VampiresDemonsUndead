@@ -37,9 +37,22 @@
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
     </weaponTags>
+    <startingHediffs>
+      <li>
+        <def>BS_SoulCollector</def>
+        <severity>0.35</severity>
+      </li>
+      <li>
+        <def>BS_SoulPowerHediff</def>
+        <severity>1.35</severity>
+      </li>
+      <li>
+        <def>BS_SoulSize</def>
+      </li>
+    </startingHediffs>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="VU_RoamingUndeadLeader_Medieval">
+  <PawnKindDef ParentName="VU_RoamingUndeadLeader_Medieval" Name="VU_DemonCommander">
     <defName>VU_DemonCommander</defName>
     <label>commander</label>
     <combatPower>135</combatPower>
@@ -57,9 +70,22 @@
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
     </weaponTags>
+    <startingHediffs>
+      <li>
+        <def>BS_SoulCollector</def>
+        <severity>0.6</severity>
+      </li>
+      <li>
+        <def>BS_SoulPowerHediff</def>
+        <severity>1.6</severity>
+      </li>
+      <li>
+        <def>BS_SoulSize</def>
+      </li>
+    </startingHediffs>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="VU_RoamingUndeadLeader_Medieval">
+  <PawnKindDef ParentName="VU_RoamingUndeadLeader_Medieval" Name="VU_DemonCommander_Suc">
     <defName>VU_DemonCommander_Suc</defName>
     <label>noble</label>
     <combatPower>135</combatPower>
@@ -78,6 +104,58 @@
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
     </weaponTags>
+    <startingHediffs>
+      <li>
+        <def>BS_SoulCollector</def>
+        <severity>0.5</severity>
+      </li>
+      <li>
+        <def>BS_SoulPowerHediff</def>
+        <severity>1.5</severity>
+      </li>
+    </startingHediffs>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="VU_DemonCommander">
+    <defName>VU_DemonPrince</defName>
+    <label>demon prince</label>
+    <combatPower>200</combatPower>
+    <apparelMoney>8000~16000</apparelMoney>
+    <weaponMoney>3700~1600</weaponMoney>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances Inherit="False">
+        <VU_Hellguard>999</VU_Hellguard>
+      </xenotypeChances>
+    </xenotypeSet>
+    <maxPerGroup>1</maxPerGroup>
+    <weaponTags Inherit="False">
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcanHalberd</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
+      <li>HerculeanWeapon</li>
+      <li>MedievalMeleeGiant</li>
+      <li>MedievalMeleeAdvancedGiant</li>
+    </weaponTags>
+    <skills>
+			<li>
+				<skill>Melee</skill>
+				<range>14~20</range>
+			</li>
+		</skills>
+    <startingHediffs Inherit="False">
+      <li>
+        <def>BS_SoulCollector</def>
+        <severity>1.5</severity>
+      </li>
+      <li>
+        <def>BS_SoulPowerHediff</def>
+        <severity>2.5</severity>
+      </li>
+      <li>
+        <def>BS_SoulSize</def>
+      </li>
+    </startingHediffs>
   </PawnKindDef>
 
   <PawnKindDef ParentName="VU_RoamingUndeadLeader_Medieval">

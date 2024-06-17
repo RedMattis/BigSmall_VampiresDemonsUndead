@@ -132,6 +132,7 @@
     <defName>VU_DraculInfectiousBite</defName>
     <label>Infectious Attack (Dracul)</label>
     <displayCategory>BS_DO_NOT</displayCategory>
+    <prerequisite>Hemogenic</prerequisite>
     <description>Bites from this person can infect the victim with vampirism.</description>
     <iconPath>GeneIcons/VU_InfectiousAttackDracul</iconPath>
     <geneClass>BetterPrerequisites.PGene</geneClass>
@@ -164,6 +165,7 @@
     <label>Dracul Feral</label>
     <displayCategory>BS_DO_NOT</displayCategory>
     <description>They barely recall that they were human and left to their own devices they will do little but hunt and sleep.\nDracul which reanimate as ferals rarely manage to become proper Dracul.\nProper Dracul vampires rarely refer to the ferals as dracul or even recognize them as vampires, usually perferring to call them "ferals", "wretches", or confusingly "ghouls".\n\n...this gene should only be found on Dracul Ferals.</description>
+    <prerequisite>Hemogenic</prerequisite>
     <customEffectDescriptions>
       <li>Progresses after X Days.</li>
     </customEffectDescriptions>
@@ -194,6 +196,7 @@
     <label>Dracul Spawn</label>
     <displayCategory>BS_DO_NOT</displayCategory>
     <description>When not hunting or sleeping they absentmindedly trace their previous habits and behaviours.</description>
+    <prerequisite>Hemogenic</prerequisite>
     <customEffectDescriptions>
       <li>Progresses after X Days.</li>
     </customEffectDescriptions>
@@ -224,6 +227,7 @@
     <label>Dracul Neonate</label>
     <displayCategory>BS_DO_NOT</displayCategory>
     <description>With some makeup they could fool the living, but their dumbfoundedness when faced with new situations tend to make others suspicious.</description>
+    <prerequisite>Hemogenic</prerequisite>
     <customEffectDescriptions>
       <li>Progresses after X Days.</li>
     </customEffectDescriptions>
@@ -254,6 +258,7 @@
     <label>Dracul</label>
     <displayCategory>BS_DO_NOT</displayCategory>
     <description>Few dracul survive to this "mature" stage. Those who do are freed of most of their mental handicaps, and are often very dangerous.</description>
+    <prerequisite>Hemogenic</prerequisite>
     <customEffectDescriptions>
       <li>Progresses after X Days.</li>
     </customEffectDescriptions>
@@ -284,6 +289,7 @@
     <label>Dracul Master</label>
     <displayCategory>BS_DO_NOT</displayCategory>
     <description>Often called Masters or Progenitors. When groups of Dracul Neonates are found acting in an organized manner there is often one of these around pulling the strings.</description>
+    <prerequisite>Hemogenic</prerequisite>
     <customEffectDescriptions>
       <li>Does not progress further.</li>
     </customEffectDescriptions>

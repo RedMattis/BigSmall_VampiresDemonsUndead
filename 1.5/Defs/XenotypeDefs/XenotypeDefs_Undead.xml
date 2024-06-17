@@ -15,6 +15,7 @@
       <Neanderthal>0.02</Neanderthal>
       <Waster>0.02</Waster>
       <Dirtmole>0.02</Dirtmole>
+      <VU_Revenant>0.05</VU_Revenant> <!--This is the only way to encounter revenants as of writing.-->
       <BS_Svartalf MayRequire="RedMattis.BigSmall">0.05</BS_Svartalf>
       <BS_FrostJotun MayRequire="RedMattis.BigSmall">0.01</BS_FrostJotun>
       <BS_Jotun MayRequire="RedMattis.BigSmall">0.01</BS_Jotun>

@@ -5,7 +5,7 @@
     <defName>VU_LycantropeInfect</defName>
     <label>infect with lycantropy</label>
     <description>Infect the target with lycantropy. Only works on allies, to infect other engage them in combat.</description>
-    <iconPath>GeneIcons/VU_Skull</iconPath>
+    <iconPath>GeneIcons/VU_InfectiousAttackWerewolf</iconPath>
     <category>Sanguophage</category>
     <displayOrder>100</displayOrder>
     <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>

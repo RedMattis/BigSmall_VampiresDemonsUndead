@@ -1,7 +1,7 @@
 <Defs>
   <HediffDef>
 		<defName>VU_WerewolfFangs</defName>
-		<label>Werewolf Fangs</label>
+		<label>werewolf fangs</label>
 		<description>The brutal fangs of a transformed werewolf. Can infect victims with lycantropy.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<scenarioCanAdd>false</scenarioCanAdd>
@@ -13,8 +13,10 @@
             <label>werewolf bite</label>
             <capacities>
               <li>VU_WerewolfBiteCap</li>
+              <li>BS_BiteDevour</li>
             </capacities>
-            <power>8</power>
+            <power>16</power>
+            <chanceFactor>1</chanceFactor>
             <cooldownTime>2</cooldownTime>
             <!-- <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup> -->
             <surpriseAttack>
@@ -138,7 +140,7 @@
               </hediffsToRemove>
             </trigger>
           </li>
-          <li>
+          <!-- <li>
             <severity>0.90</severity>
             <trigger>
               <xenogene>false</xenogene>
@@ -147,7 +149,7 @@
                 <li>BS_AnimalEars</li>
               </geneDefsToAdd>
             </trigger>
-          </li>
+          </li> -->
         </onSeverity>
       </li>
     </modExtensions>

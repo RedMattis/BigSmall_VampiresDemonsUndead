@@ -51,7 +51,7 @@
 			<li>AptitudeTerrible_Shooting</li>
 			<li>AptitudeStrong_Melee</li>
       <li>VU_DraculInfectiousBite</li>
-			<li>BS_NoFood</li>
+			<li>BS_NoFood_Hemogenic</li>
 			<li>BS_LesserDeathless</li>
 			
 			<li MayRequire="vanillaracesexpanded.sanguophage">VRE_CorpseFeeder</li>
@@ -128,7 +128,7 @@
 			<li>AptitudeStrong_Melee</li>
 			<li>AptitudePoor_Social</li>
       <li>VU_DraculInfectiousBite</li>
-			<li>BS_NoFood</li>
+			<li>BS_NoFood_Hemogenic</li>
 			<li>BS_LesserDeathless</li>
     </genes>
     <factionlessGenerationWeight>0</factionlessGenerationWeight>
@@ -195,7 +195,7 @@
 			<li>AptitudePoor_Social</li>
       <li>VU_DraculInfectiousBite</li>
 			<li MayRequire="vanillaracesexpanded.sanguophage">VRE_SanguoFeeder</li>
-			<li>BS_NoFood</li>
+			<li>BS_NoFood_Hemogenic</li>
     </genes>
     <factionlessGenerationWeight>0.1</factionlessGenerationWeight>
     <doubleXenotypeChances>
@@ -257,7 +257,7 @@
 			<li>DarkVision</li>
 			<li>VU_DraculInfectiousBite</li>
 			<li MayRequire="vanillaracesexpanded.sanguophage">VRE_SanguoFeeder</li>
-			<li>BS_NoFood</li>
+			<li>BS_NoFood_Hemogenic</li>
     </genes>
     <factionlessGenerationWeight>0.05</factionlessGenerationWeight>
     <doubleXenotypeChances>
@@ -321,7 +321,7 @@
 			<li>VU_DraculInfectiousBite</li>
 			<li MayRequire="vanillaracesexpanded.sanguophage">VRE_SanguoFeeder</li>
 			<li MayRequire="vanillaracesexpanded.sanguophage">VRE_Hemosmosis</li>
-			<li>BS_NoFood</li>
+			<li>BS_NoFood_Hemogenic</li>
 			<li MayRequire="ludeon.rimworld.anomaly">BS_GreaterDeathless</li>
     </genes>
     <factionlessGenerationWeight>0.001</factionlessGenerationWeight>
@@ -362,7 +362,7 @@
       <li>DarkVision</li>
       <li>Instability_Major</li>
 			<li MayRequire="vanillaracesexpanded.sanguophage">VRE_SanguoFeeder</li>
-			<!-- <li>BS_NoFood</li> -->
+			<!-- <li>BS_NoFood_Hemogenic</li> -->
     </genes>
     <doubleXenotypeChances>
       <Pigskin>0.10</Pigskin>

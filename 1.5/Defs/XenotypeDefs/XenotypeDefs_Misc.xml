@@ -10,45 +10,40 @@
       <Pigskin>0.10</Pigskin>
     </doubleXenotypeChances>
     <genes>
-      <li>VU_Pounce</li>
 			<li>KillThirst</li>
-			<li>HalfJotunFrame</li>
-			<li>BS_WerewolfSnoot</li>
 			<!-- <li>Ears_Cat</li> Lol -->
-			<li>BS_AnimalEars</li>
+			
 			<li>BS_Unarmed_VeryStrong</li>
-			<li>BS_UnarmedOnly</li>
+			<!-- <li>BS_UnarmedOnly</li> -->
 			<li>LowSleep</li>
 			<!-- <li MayRequire="biotexpans.mammalia">BTE_FeralMight</li> -->
 			<li>StrongStomach</li>
 			<li>RobustDigestion</li>
-			<li>VU_DarknessWoundHealing_Fast</li>
-			<li>Immunity_SuperStrong</li>
-			<li>Superclotting</li>
-			<li>VU_Darkness_MoveSpeed_VeryQuick</li>
-			<li>Mood_Depressive</li>
-			<li>MinTemp_LargeDecrease</li>
-			<li>MaxTemp_SmallIncrease</li>
-			<li>Aggression_HyperAggressive</li>
+			<!-- <li>Immunity_SuperStrong</li> -->
+			<!-- <li>Superclotting</li>
+			<li>VU_Darkness_MoveSpeed_VeryQuick</li> -->
+			
+			<!-- <li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_SmallIncrease</li> -->
+			<!-- <li>Aggression_HyperAggressive</li> -->
 			<!-- <li>VU_DarknessMelee</li> -->
-			<li>BS_Pain_None</li>
-			<li>Tail_Furry</li>
-			<li>Beauty_VeryUgly</li>
-			<li>VoiceRoar</li>
+			<!-- <li>BS_Pain_None</li> -->
+			
+			<!-- <li>Beauty_VeryUgly</li> -->
+			<!-- <li>VoiceRoar</li> -->
 			<li>Body_Standard</li>
 			<li>Body_Hulk</li>
 			<!-- <li>Hair_Gray</li> -->
 			<!-- <li>Skin_SlateGray</li> -->
-			<li>VU_Involuntary_Werewolf</li>
 			<li>Cannibal</li>
-			<li>BS_ToughSkin</li>
-			<li>Learning_Slow</li>
-			<li>Nearsighted</li>
+			<!-- <li>BS_ToughSkin</li> -->
+			<!-- <li>Learning_Slow</li> -->
 			<li>DarkVision</li>
-			<li MayRequire="sarg.alphagenes">AG_ClawedHands</li>
-			<li>Furskin</li>
-			<li>Unstoppable</li>
-			<li>AptitudePoor_Shooting</li>
+
+			<!-- <li>Deathless</li>
+			<li>BS_LesserDeathless</li> -->
+
+			<!-- <li>AptitudePoor_Shooting</li>
 			<li>AptitudeStrong_Melee</li>
 			<li>AptitudePoor_Mining</li>
 			<li>AptitudePoor_Cooking</li>
@@ -60,7 +55,21 @@
 			<li>AptitudeTerrible_Medicine</li>
 			<li>AptitudePoor_Social</li>
 			<li>AptitudeTerrible_Intellectual</li>
-			<li>VU_WerewolfInfectiousBite</li>
+			 -->
+			<!-- <li MayRequire="sarg.alphagenes">AG_ClawedHands</li> -->
+			<!-- <li>Mood_Depressive</li> -->
+
+			<li>VU_Involuntary_Werewolf</li>
+
+			<!-- <li>Furskin</li>
+			<li>BS_WerewolfSnoot</li>
+			<li>Tail_Furry</li>
+			<li>HalfJotunFrame</li>
+			<li>BS_AnimalEars</li> -->
+			<!-- <li>VU_WerewolfInfectiousBite</li> -->
+			<li>AptitudePoor_Animals</li>
+			<li>Aggression_Aggressive</li>
+			<li>Instability_Mild</li>
      </genes>
      <forbiddenWeaponClasses>
       <li>LongShots</li>
