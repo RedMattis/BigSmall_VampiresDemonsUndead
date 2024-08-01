@@ -19,24 +19,38 @@
     <biostatMet>6</biostatMet>
     <symbolPack>
       <prefixSymbols>
-        <li><symbol>dark</symbol></li>
-        <li><symbol>tunnel</symbol></li>
-        <li><symbol>under</symbol></li>
-        <li><symbol>cave</symbol></li>
-        <li><symbol>crypt</symbol></li>
-        <li><symbol>dim</symbol></li>
-        <li><symbol>night</symbol></li>
+        <li>
+          <symbol>dark</symbol>
+        </li>
+        <li>
+          <symbol>tunnel</symbol>
+        </li>
+        <li>
+          <symbol>under</symbol>
+        </li>
+        <li>
+          <symbol>cave</symbol>
+        </li>
+        <li>
+          <symbol>crypt</symbol>
+        </li>
+        <li>
+          <symbol>dim</symbol>
+        </li>
+        <li>
+          <symbol>night</symbol>
+        </li>
       </prefixSymbols>
     </symbolPack>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
+      </li>
+    </modExtensions>
   </GeneDef>
-  
+
   <ThoughtDef>
     <defName>SunlightSensitivityVeryIntense</defName>
     <workerClass>ThoughtWorker_InSunlight</workerClass>
@@ -52,7 +66,7 @@
       </li>
     </stages>
   </ThoughtDef>
-  
+
   <GeneDef ParentName="GeneHealingRateBase">
     <defName>VU_DarknessWoundHealing_Fast</defName>
     <label>fast darkness healing</label>
@@ -78,14 +92,14 @@
     </conditionalStatAffecters>
     <biostatMet>-2</biostatMet>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
+      </li>
+    </modExtensions>
   </GeneDef>
-  
+
   <GeneDef ParentName="GeneHealingRateBase">
     <defName>VU_DarknessWoundHealing_UltraFast</defName>
     <label>exceptional darkness healing</label>
@@ -95,7 +109,7 @@
     <displayOrderInCategory>50</displayOrderInCategory>
     <marketValueFactor>2.0</marketValueFactor>
     <!-- <statFactors> -->
-      <!-- <InjuryHealingFactor>1</InjuryHealingFactor> -->
+    <!-- <InjuryHealingFactor>1</InjuryHealingFactor> -->
     <!-- </statFactors> -->
     <conditionalStatAffecters>
       <li Class="BigAndSmall.ConditionalStatAffecter_AtNight">
@@ -111,12 +125,12 @@
     </conditionalStatAffecters>
     <biostatMet>-4</biostatMet>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef ParentName="GeneMeleeDamageBase">
@@ -140,14 +154,14 @@
     </conditionalStatAffecters>
     <biostatMet>-1</biostatMet>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
+      </li>
+    </modExtensions>
   </GeneDef>
-  
+
   <GeneDef ParentName="GeneMeleeDamageBase">
     <defName>VU_DarknessMelee_Strong</defName>
     <label>darkness improved melee</label>
@@ -156,8 +170,8 @@
     <iconPath>GeneIcons/VU_DarknessMelee_Strong</iconPath>
     <displayOrderInCategory>40</displayOrderInCategory>
     <statFactors>
-          <MeleeDamageFactor>1.1</MeleeDamageFactor>
-        </statFactors>
+      <MeleeDamageFactor>1.1</MeleeDamageFactor>
+    </statFactors>
     <conditionalStatAffecters>
       <li Class="BigAndSmall.ConditionalStatAffecter_AtNight">
         <statFactors>
@@ -172,22 +186,22 @@
     </conditionalStatAffecters>
     <biostatMet>-2</biostatMet>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
+      </li>
+    </modExtensions>
   </GeneDef>
-  
+
   <GeneDef ParentName="GeneMoveSpeedBase">
     <defName>VU_Darkness_MoveSpeed_Quick</defName>
-    <label>darkness fast runner</label> 
+    <label>darkness fast runner</label>
     <labelShortAdj>fast</labelShortAdj>
     <description>Carriers of this gene move more quickly than normal after nightfall.</description>
     <iconPath>GeneIcons/VU_DarknessSpeed_Fast</iconPath>
     <displayOrderInCategory>20</displayOrderInCategory>
-    
+
     <statOffsets>
       <MoveSpeed>0.20</MoveSpeed>
     </statOffsets>
@@ -206,47 +220,69 @@
     <biostatMet>-2</biostatMet>
     <symbolPack>
       <wholeNameSymbols>
-        <li><symbol>speeder</symbol></li>
+        <li>
+          <symbol>speeder</symbol>
+        </li>
       </wholeNameSymbols>
       <prefixSymbols>
-        <li><symbol>speed</symbol></li>
-        <li><symbol>fast</symbol></li>
-        <li><symbol>quick</symbol></li>
-        <li><symbol>agi</symbol></li>
-        <li><symbol>nimb</symbol></li>
-        <li><symbol>swift</symbol></li>
-        <li><symbol>flash</symbol></li>
+        <li>
+          <symbol>speed</symbol>
+        </li>
+        <li>
+          <symbol>fast</symbol>
+        </li>
+        <li>
+          <symbol>quick</symbol>
+        </li>
+        <li>
+          <symbol>agi</symbol>
+        </li>
+        <li>
+          <symbol>nimb</symbol>
+        </li>
+        <li>
+          <symbol>swift</symbol>
+        </li>
+        <li>
+          <symbol>flash</symbol>
+        </li>
       </prefixSymbols>
       <suffixSymbols>
-        <li><symbol>flash</symbol></li>
-        <li><symbol>runner</symbol></li>
-        <li><symbol>sprinter</symbol></li>
+        <li>
+          <symbol>flash</symbol>
+        </li>
+        <li>
+          <symbol>runner</symbol>
+        </li>
+        <li>
+          <symbol>sprinter</symbol>
+        </li>
       </suffixSymbols>
     </symbolPack>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
+      </li>
+    </modExtensions>
   </GeneDef>
-  
+
   <GeneDef ParentName="GeneMoveSpeedBase">
     <defName>VU_Darkness_MoveSpeed_VeryQuick</defName>
-    <label>darkness very fast runner</label> 
+    <label>darkness very fast runner</label>
     <labelShortAdj>fast</labelShortAdj>
     <description>Carriers of this gene move much more quickly than normal after nightfall.</description>
     <iconPath>GeneIcons/VU_DarknessSpeed_VeryFast</iconPath>
     <displayOrderInCategory>20</displayOrderInCategory>
-    
+
     <statOffsets>
-          <MoveSpeed>0.40</MoveSpeed>
-        </statOffsets>
+      <MoveSpeed>0.40</MoveSpeed>
+    </statOffsets>
     <conditionalStatAffecters>
       <li Class="BigAndSmall.ConditionalStatAffecter_AtNight">
         <statOffsets>
-          <MoveSpeed>0.60</MoveSpeed>
+          <MoveSpeed>0.80</MoveSpeed>
         </statOffsets>
       </li>
       <li Class="ConditionalStatAffecter_InSunlight">
@@ -255,32 +291,54 @@
         </statOffsets>
       </li>
     </conditionalStatAffecters>
-    <biostatMet>-4</biostatMet>
+    <biostatMet>-5</biostatMet>
     <symbolPack>
       <wholeNameSymbols>
-        <li><symbol>speeder</symbol></li>
+        <li>
+          <symbol>speeder</symbol>
+        </li>
       </wholeNameSymbols>
       <prefixSymbols>
-        <li><symbol>speed</symbol></li>
-        <li><symbol>fast</symbol></li>
-        <li><symbol>quick</symbol></li>
-        <li><symbol>agi</symbol></li>
-        <li><symbol>nimb</symbol></li>
-        <li><symbol>swift</symbol></li>
-        <li><symbol>flash</symbol></li>
+        <li>
+          <symbol>speed</symbol>
+        </li>
+        <li>
+          <symbol>fast</symbol>
+        </li>
+        <li>
+          <symbol>quick</symbol>
+        </li>
+        <li>
+          <symbol>agi</symbol>
+        </li>
+        <li>
+          <symbol>nimb</symbol>
+        </li>
+        <li>
+          <symbol>swift</symbol>
+        </li>
+        <li>
+          <symbol>flash</symbol>
+        </li>
       </prefixSymbols>
       <suffixSymbols>
-        <li><symbol>flash</symbol></li>
-        <li><symbol>runner</symbol></li>
-        <li><symbol>sprinter</symbol></li>
+        <li>
+          <symbol>flash</symbol>
+        </li>
+        <li>
+          <symbol>runner</symbol>
+        </li>
+        <li>
+          <symbol>sprinter</symbol>
+        </li>
       </suffixSymbols>
     </symbolPack>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
         <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
-		</modExtensions>
+      </li>
+    </modExtensions>
   </GeneDef>
 </Defs>

@@ -64,8 +64,8 @@
       <li>Learning_Slow</li>
       
       <!-- <li>Cannibal</li> -->
-      <li>StrongStomach</li>
-      <li>RobustDigestion</li>
+      <!-- <li>StrongStomach</li>
+      <li>RobustDigestion</li> -->
       <li>BS_NoFood_Hemogenic</li>
       
       <li MayRequire="vanillaracesexpanded.sanguophage">VRE_AnimalFeeder</li>

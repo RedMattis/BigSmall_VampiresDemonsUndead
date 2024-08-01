@@ -33,6 +33,7 @@
       </li>
       <li Class="BigAndSmall.CompProperties_TargetEffectReanimate">
         <moteDef>Mote_ResurrectFlash</moteDef>
+        <xenoTypeDef>VU_Returned</xenoTypeDef>
       </li>
     </comps>
     <recipeMaker>
