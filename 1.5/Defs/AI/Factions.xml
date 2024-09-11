@@ -12,6 +12,12 @@
     <techLevel>Industrial</techLevel>
     <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
     <allowedCultures><li>Astropolitan</li></allowedCultures>
+    <!-- <thingStyleCategories>
+      <li MayRequire="anthitei.athsstyleableframework.style">
+        <category>BloodyGothic</category>
+        <priority>3</priority>
+      </li>
+    </thingStyleCategories> -->
     <requiredMemes Inherit="False">
       <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>

@@ -7,8 +7,6 @@
 		<xpath>/Defs/PawnKindDef[@Name="SanguophageBase"]/xenotypeSet/xenotypeChances</xpath>
 		<value>
       <VU_WhiteRose>350</VU_WhiteRose>
-      <VU_Dracul_Progenitor>350</VU_Dracul_Progenitor>
-      <VU_Dracul_Mature>100</VU_Dracul_Mature>
       <VU_Nosferatu>150</VU_Nosferatu>
 		</value>
 	</Operation>

@@ -42,13 +42,7 @@
         </li>
       </prefixSymbols>
     </symbolPack>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <ThoughtDef>
@@ -91,13 +85,7 @@
       </li>
     </conditionalStatAffecters>
     <biostatMet>-2</biostatMet>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <GeneDef ParentName="GeneHealingRateBase">
@@ -124,13 +112,7 @@
       </li>
     </conditionalStatAffecters>
     <biostatMet>-4</biostatMet>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <GeneDef ParentName="GeneMeleeDamageBase">
@@ -153,13 +135,7 @@
       </li>
     </conditionalStatAffecters>
     <biostatMet>-1</biostatMet>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <GeneDef ParentName="GeneMeleeDamageBase">
@@ -185,13 +161,7 @@
       </li>
     </conditionalStatAffecters>
     <biostatMet>-2</biostatMet>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <GeneDef ParentName="GeneMoveSpeedBase">
@@ -259,13 +229,7 @@
         </li>
       </suffixSymbols>
     </symbolPack>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 
   <GeneDef ParentName="GeneMoveSpeedBase">
@@ -333,12 +297,6 @@
         </li>
       </suffixSymbols>
     </symbolPack>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-      </li>
-    </modExtensions>
+
   </GeneDef>
 </Defs>
