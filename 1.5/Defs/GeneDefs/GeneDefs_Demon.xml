@@ -18,7 +18,7 @@
     <soundWounded>Pawn_Furskin_Wounded</soundWounded>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
-        <unarmedOnly>true</unarmedOnly>
+        <forceUnarmed>true</forceUnarmed>
         <invert>false</invert>
 				<conditionals><li Class="BigAndSmall.ConditionalStatAffecter_AtNight"/></conditionals>
 				<applyBodyHediff><li><hediff>BS_WerewolfForm</hediff></li></applyBodyHediff>

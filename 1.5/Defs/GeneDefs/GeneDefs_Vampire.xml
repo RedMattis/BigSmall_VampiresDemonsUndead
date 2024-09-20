@@ -83,7 +83,7 @@
     </descriptionHyperlinks>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
-        <hideInXenotypeUI>true</hideInXenotypeUI>
+        <hideInGenePicker>true</hideInGenePicker>
       </li>
     </modExtensions>
   </GeneDef>
@@ -116,9 +116,6 @@
           </li>
         </prerequisiteSets>
       </li>
-      <li Class="BetterPrerequisites.GeneExtension">
-        <hideInXenotypeUI>true</hideInXenotypeUI>
-      </li>
 		</modExtensions>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
     <selectionWeight>0</selectionWeight>
@@ -142,7 +139,7 @@
             </bodyparts>
 					</li>
 				</applyPartHediff>
-        <hideInXenotypeUI>true</hideInXenotypeUI>
+        <hideInGenePicker>true</hideInGenePicker>
       </li>
     </modExtensions>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -172,7 +169,7 @@
         <durationDays>30</durationDays>
       </li>
 			<li Class="BetterPrerequisites.GeneExtension">
-        <hideInXenotypeUI>true</hideInXenotypeUI>
+        <hideInGenePicker>true</hideInGenePicker>
       </li>
 		</modExtensions>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -200,7 +197,7 @@
         <durationDays>14</durationDays>
       </li>
 			<li Class="BetterPrerequisites.GeneExtension">
-        <hideInXenotypeUI>true</hideInXenotypeUI>
+        <hideInGenePicker>true</hideInGenePicker>
       </li>
 		</modExtensions>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -228,7 +225,7 @@
         <durationDays>30</durationDays>
       </li>
 			<li Class="BetterPrerequisites.GeneExtension">
-        <hideInXenotypeUI>true</hideInXenotypeUI>
+        <hideInGenePicker>true</hideInGenePicker>
       </li>
 		</modExtensions>
     <canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -253,7 +250,7 @@
         <durationDays>80</durationDays>
       </li>
 			<li Class="BetterPrerequisites.GeneExtension">
-        <hideInXenotypeUI>true</hideInXenotypeUI>
+        <hideInGenePicker>true</hideInGenePicker>
       </li>
 		</modExtensions>
     <statOffsets>
@@ -283,7 +280,7 @@
         <durationDays>4000</durationDays>
       </li>
 			<li Class="BetterPrerequisites.GeneExtension">
-        <hideInXenotypeUI>true</hideInXenotypeUI>
+        <hideInGenePicker>true</hideInGenePicker>
       </li>
 		</modExtensions>
     <statOffsets>
