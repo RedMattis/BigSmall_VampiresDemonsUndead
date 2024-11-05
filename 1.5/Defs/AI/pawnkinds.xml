@@ -141,7 +141,8 @@
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <VU_Dracul_Feral>0.40</VU_Dracul_Feral>
-        <VU_Returned>0.30</VU_Returned>
+        <VU_Returned MayRequire="RedMattis.Undead">0.15</VU_Returned>
+        <VU_Returned_Intact MayRequire="RedMattis.Undead">0.15</VU_Returned_Intact>
         <VU_Dracul_Spawn>0.30</VU_Dracul_Spawn>
         <VU_Nosferatu>0.05</VU_Nosferatu>
       </xenotypeChances>
@@ -197,7 +198,8 @@
     <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
-        <VU_Returned>0.40</VU_Returned>
+        <VU_Returned MayRequire="RedMattis.Undead">0.20</VU_Returned>
+        <VU_Returned_Intact MayRequire="RedMattis.Undead">0.20</VU_Returned_Intact>
         <VU_Dracul_Spawn>0.60</VU_Dracul_Spawn>
         <VU_Nosferatu>0.05</VU_Nosferatu>
       </xenotypeChances>
