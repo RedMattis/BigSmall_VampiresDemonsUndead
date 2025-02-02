@@ -82,7 +82,7 @@
       <AbilityDef>VU_DraculBite</AbilityDef>
     </descriptionHyperlinks>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <hideInGenePicker>true</hideInGenePicker>
       </li>
     </modExtensions>
@@ -130,7 +130,7 @@
     <iconPath>GeneIcons/VU_InfectiousAttackDracul</iconPath>
     <geneClass>BetterPrerequisites.PGene</geneClass>
     <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyPartHediff>
 					<li>
 						<hediff>VU_DraculTeeth</hediff>
@@ -168,7 +168,7 @@
         <draculStage>0</draculStage>
         <durationDays>30</durationDays>
       </li>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
         <hideInGenePicker>true</hideInGenePicker>
       </li>
 		</modExtensions>
@@ -196,7 +196,7 @@
         <draculStage>1</draculStage>
         <durationDays>14</durationDays>
       </li>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
         <hideInGenePicker>true</hideInGenePicker>
       </li>
 		</modExtensions>
@@ -224,7 +224,7 @@
         <draculStage>2</draculStage>
         <durationDays>30</durationDays>
       </li>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
         <hideInGenePicker>true</hideInGenePicker>
       </li>
 		</modExtensions>
@@ -249,7 +249,7 @@
         <draculStage>3</draculStage>
         <durationDays>80</durationDays>
       </li>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
         <hideInGenePicker>true</hideInGenePicker>
       </li>
 		</modExtensions>
@@ -279,7 +279,7 @@
         <draculStage>4</draculStage>
         <durationDays>4000</durationDays>
       </li>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
         <hideInGenePicker>true</hideInGenePicker>
       </li>
 		</modExtensions>

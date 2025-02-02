@@ -17,7 +17,7 @@
     <soundDeath>Pawn_Furskin_Death</soundDeath>
     <soundWounded>Pawn_Furskin_Wounded</soundWounded>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <forceUnarmed>true</forceUnarmed>
         <invert>false</invert>
 				<conditionals><li Class="BigAndSmall.ConditionalStatAffecter_AtNight"/></conditionals>
@@ -62,7 +62,7 @@
       <AbilityDef>VU_LycantropeInfect</AbilityDef>
     </descriptionHyperlinks>
     <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<applyPartHediff>
 					<li>
 						<hediff>VU_WerewolfFangs</hediff>
