@@ -23,6 +23,10 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
       <li>Bloodfeeding</li>
     </requiredMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
     <caravanTraderKinds>
       <li>Caravan_Outlander_BulkGoods</li>
       <li>Caravan_Outlander_CombatSupplier</li>
@@ -159,6 +163,10 @@
       <li>ImmediateAttackSmart</li>
       <li>Siege</li>
     </disallowedRaidStrategies>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
     <!-- <requiredMemes>
     </requiredMemes> -->
     <colorSpectrum>
