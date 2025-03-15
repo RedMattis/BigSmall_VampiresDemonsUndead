@@ -6,11 +6,14 @@
   <XenotypeDef ParentName="VU_Returned_Intact">
     <defName>VU_Returned_Intact</defName>
   </XenotypeDef>
+  <XenotypeDef ParentName="VU_ReturnedSkeletal">
+    <defName>VU_ReturnedSkeletal</defName>
+  </XenotypeDef>
 
   <XenotypeDef>
     <defName>VU_Revenant</defName>
     <label>Revenant</label>
-    <description>An individual who keeps comming back again and again and again by transfering their essence to dead bodies. Surely there must be some way to kill them off for good?</description>
+    <description>An individual who keeps coming back again and again and again by transferring their essence to dead bodies. Surely there must be some way to kill them off for good?</description>
     <inheritable>true</inheritable>
     <combatPowerFactor>1.5</combatPowerFactor>
     <iconPath>Xenotypes/BS_Ghost</iconPath>
