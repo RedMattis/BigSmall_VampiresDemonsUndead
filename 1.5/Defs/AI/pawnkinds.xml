@@ -119,7 +119,6 @@
       <li>MedievalArmorDecent</li>
       <li>MedievalArmorElite</li>
       <li>MedievalMilitary</li>
-      
     </apparelTags>
     <itemQuality>Poor</itemQuality>
     <gearHealthRange>0.3~1.1</gearHealthRange>
@@ -141,8 +140,9 @@
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <VU_Dracul_Feral>0.40</VU_Dracul_Feral>
-        <VU_Returned MayRequire="RedMattis.Undead">0.15</VU_Returned>
-        <VU_Returned_Intact MayRequire="RedMattis.Undead">0.15</VU_Returned_Intact>
+        <VU_Returned MayRequire="RedMattis.Undead">0.10</VU_Returned>
+        <VU_Returned_Intact MayRequire="RedMattis.Undead">0.10</VU_Returned_Intact>
+        <VU_ReturnedSkeletal MayRequire="RedMattis.Undead">0.10</VU_ReturnedSkeletal>
         <VU_Dracul_Spawn>0.30</VU_Dracul_Spawn>
         <VU_Nosferatu>0.05</VU_Nosferatu>
       </xenotypeChances>
@@ -198,8 +198,9 @@
     <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
-        <VU_Returned MayRequire="RedMattis.Undead">0.20</VU_Returned>
-        <VU_Returned_Intact MayRequire="RedMattis.Undead">0.20</VU_Returned_Intact>
+        <VU_Returned MayRequire="RedMattis.Undead">0.10</VU_Returned>
+        <VU_Returned_Intact MayRequire="RedMattis.Undead">0.15</VU_Returned_Intact>
+        <VU_ReturnedSkeletal MayRequire="RedMattis.Undead">0.15</VU_ReturnedSkeletal>
         <VU_Dracul_Spawn>0.60</VU_Dracul_Spawn>
         <VU_Nosferatu>0.05</VU_Nosferatu>
       </xenotypeChances>
@@ -257,6 +258,8 @@
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcanHalberd</li>
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
+      <li>Addie_BloodWeapons</li>
+      <li>Addie_BloodWeapon</li>
     </weaponTags>
     <techHediffsMoney>200~4000</techHediffsMoney>
     <techHediffsTags Inherit="False">

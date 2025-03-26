@@ -46,6 +46,7 @@
         <VU_Ghoul>0.30</VU_Ghoul>
         <VU_Returned>0.10</VU_Returned>
         <VU_Returned_Intact>0.10</VU_Returned_Intact>
+        <VU_ReturnedSkeletal>0.10</VU_ReturnedSkeletal>
         <VU_WhiteRose>0.10</VU_WhiteRose>
         <VU_Succubus>0.05</VU_Succubus>
         <VU_Nosferatu>0.05</VU_Nosferatu>
@@ -181,8 +182,10 @@
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <VU_Dracul_Feral>0.50</VU_Dracul_Feral>
-        <VU_Ghoul>0.30</VU_Ghoul>
-        <VU_Returned>0.20</VU_Returned>
+        <VU_Ghoul>0.20</VU_Ghoul>
+        <VU_Returned>0.10</VU_Returned>
+        <VU_Returned_Intact>0.10</VU_Returned_Intact>
+        <VU_ReturnedSkeletal>0.10</VU_ReturnedSkeletal>
         <VU_Dracul_Spawn>0.20</VU_Dracul_Spawn>
         <VU_Succubus>0.05</VU_Succubus>
         <VU_Nosferatu>0.05</VU_Nosferatu>
