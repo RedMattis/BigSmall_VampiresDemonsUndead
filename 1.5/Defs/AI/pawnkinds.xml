@@ -280,6 +280,7 @@
         <VU_Dracul_Mature>0.10</VU_Dracul_Mature>
         <VU_Lycantrope>0.10</VU_Lycantrope>
         <VU_Dracul_Progenitor>0.05</VU_Dracul_Progenitor>
+        <BS_NanomachineVampire MayRequire="RedMattis.BigSmall.SimpleAndroids">0.05</BS_NanomachineVampire>
       </xenotypeChances>
     </xenotypeSet>
     <styleItemTags Inherit="False">
@@ -318,6 +319,12 @@
     <weaponTags Inherit="False">
       <li>Gun</li>
     </weaponTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <BS_Hemohunter MayRequire="RedMattis.BigSmall.SimpleAndroids">0.1</BS_Hemohunter>
+      </xenotypeChances>
+    </xenotypeSet>
+    
     <apparelColor>0.30,0.45,0.30</apparelColor>
   </PawnKindDef>
 
@@ -340,7 +347,16 @@
     <techHediffsChance>0.25</techHediffsChance>
     <initialWillRange>0~5</initialWillRange>
     <initialResistanceRange>18~25</initialResistanceRange>
-
+    <xenotypeSet Inherit="False">
+      <xenotypeChances Inherit="False">
+        <VU_Succubus>0.35</VU_Succubus>
+        <VU_Dracul_Progenitor>0.25</VU_Dracul_Progenitor>
+        <BS_NanomachineVampire MayRequire="RedMattis.BigSmall.SimpleAndroids">0.20</BS_NanomachineVampire>
+        <VU_WhiteRose>0.15</VU_WhiteRose>
+        <VU_Nosferatu>0.05</VU_Nosferatu>
+        <VU_Lycantrope>0.05</VU_Lycantrope>
+      </xenotypeChances>
+    </xenotypeSet>
     <factionLeader>true</factionLeader>
     <skills>
       <li>
